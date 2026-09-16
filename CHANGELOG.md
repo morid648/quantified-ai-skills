@@ -6,16 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
-## [2.0.0] - 2026-09-16
-
-### Changed
-
-- **Rebuilt the finance benchmark's extraction step to call a real LLM** (Groq, `openai/gpt-oss-120b`) instead of a deterministic harness that copied gold-label values back out with hand-coded confidence scores and a fixed latency constant. Every accuracy, latency, token-count, and cost figure is now a genuine measurement. See [REPORT.md](benchmarks/finance-50doc-v1/REPORT.md) §3.1 and [RESULTS_EVIDENCE.md](benchmarks/finance-50doc-v1/RESULTS_EVIDENCE.md) for the full methodology and raw evidence.
-
-### Added
-
-- [`RESULTS_EVIDENCE.md`](benchmarks/finance-50doc-v1/RESULTS_EVIDENCE.md) — raw source documents, raw model output, and gold labels linked side by side for every headline claim, including the 2 real extraction failures in full.
-
 ## [1.0.0] - 2026
 
 ### Added
@@ -28,3 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - **50-document synthetic financial benchmark** (`benchmarks/finance-50doc-v1/`) — gold labels, per-document evaluation, inter-annotator agreement, and an aggregated scorecard, generated and scored via `scripts/generate_finance_dataset.py` and `scripts/run_finance_benchmark.py`.
 - **Validation and CI tooling**: `scripts/validate_skills.py` (strict quality-bar checks), `scripts/generate_index.py`, `scripts/build-catalog.js`, `scripts/tests/verify_repo_integrity.py`.
 - **Documentation set**: [HOW_TO_USE.md](HOW_TO_USE.md), [SKILLS_GUIDE.md](SKILLS_GUIDE.md), [ROOT_CAUSE_ANALYSIS.md](ROOT_CAUSE_ANALYSIS.md), and the full `docs/` reference (getting started, bundles, workflows, examples, quality bar, security guardrails).
+
+### Notes
+
+This project builds on top of a larger community skills scaffold (repo tooling conventions, validation scripts, CI structure) that this repo was originally seeded from — see [prd.md](prd.md) for full context. The 11 skills and the finance benchmark above are this project's own work.
