@@ -2,7 +2,7 @@
 
 **Author:** Anshul
 **Status:** Draft v1.0
-**Target repo:** `antigravity-awesome-skills` (the uploaded `benjaminasterA/antigravity-awesome-skills` fork/snapshot — 880+ existing skills under `skills/<name>/SKILL.md`)
+**Target repo:** existing skills framework (880+ existing skills under `skills/<name>/SKILL.md`)
 
 ---
 
