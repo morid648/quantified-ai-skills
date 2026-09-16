@@ -24,7 +24,7 @@
         "rules",
         "worked"
       ],
-      "path": "skills\\annotation-guideline-writer\\SKILL.md"
+      "path": "skills/annotation-guideline-writer/SKILL.md"
     },
     {
       "id": "annotation-qa-scoring",
@@ -48,7 +48,7 @@
         "kappa",
         "gold"
       ],
-      "path": "skills\\annotation-qa-scoring\\SKILL.md"
+      "path": "skills/annotation-qa-scoring/SKILL.md"
     },
     {
       "id": "context-budget-allocator",
@@ -72,7 +72,7 @@
         "sources",
         "via"
       ],
-      "path": "skills\\context-budget-allocator\\SKILL.md"
+      "path": "skills/context-budget-allocator/SKILL.md"
     },
     {
       "id": "document-context-chunking",
@@ -96,7 +96,7 @@
         "references",
         "tables"
       ],
-      "path": "skills\\document-context-chunking\\SKILL.md"
+      "path": "skills/document-context-chunking/SKILL.md"
     },
     {
       "id": "eval-harness-builder",
@@ -120,7 +120,7 @@
         "expected",
         "output"
       ],
-      "path": "skills\\eval-harness-builder\\SKILL.md"
+      "path": "skills/eval-harness-builder/SKILL.md"
     },
     {
       "id": "extraction-prompt-library-finance",
@@ -144,7 +144,7 @@
         "financial",
         "document"
       ],
-      "path": "skills\\extraction-prompt-library-finance\\SKILL.md"
+      "path": "skills/extraction-prompt-library-finance/SKILL.md"
     },
     {
       "id": "finance-document-annotator",
@@ -168,7 +168,7 @@
         "produce",
         "gold"
       ],
-      "path": "skills\\finance-document-annotator\\SKILL.md"
+      "path": "skills/finance-document-annotator/SKILL.md"
     },
     {
       "id": "prompt-scorecard-testing",
@@ -192,7 +192,7 @@
         "sets",
         "scoring"
       ],
-      "path": "skills\\prompt-scorecard-testing\\SKILL.md"
+      "path": "skills/prompt-scorecard-testing/SKILL.md"
     },
     {
       "id": "quantified-eval-orchestrator",
@@ -216,7 +216,7 @@
         "optimization",
         "prompt"
       ],
-      "path": "skills\\quantified-eval-orchestrator\\SKILL.md"
+      "path": "skills/quantified-eval-orchestrator/SKILL.md"
     },
     {
       "id": "regression-benchmark-tracker",
@@ -240,7 +240,7 @@
         "deltas",
         "vs"
       ],
-      "path": "skills\\regression-benchmark-tracker\\SKILL.md"
+      "path": "skills/regression-benchmark-tracker/SKILL.md"
     },
     {
       "id": "training-data-quality-scorer",
@@ -264,7 +264,7 @@
         "dimension",
         "rubric"
       ],
-      "path": "skills\\training-data-quality-scorer\\SKILL.md"
+      "path": "skills/training-data-quality-scorer/SKILL.md"
     }
   ]
 }
