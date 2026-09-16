@@ -1,13 +1,12 @@
-# 🤝 Contributing Guide - V4 Enterprise Edition
+# 🤝 Contributing Guide
 
-**Thank you for wanting to make this repo better!** This guide shows you exactly how to contribute, even if you're new to open source.
-With V4, we raised the bar for quality. Please read the **new Quality Standards** below carefully.
+Thanks for taking a look at this repo. This guide covers how to add a new skill, run the local tooling, and what the quality bar checks for.
 
 ---
 
-## 🧐 The "Quality Bar" (V4 Standard)
+## 🧐 The Quality Bar
 
-**Critical for new skills:** Every skill submitted must pass our **5-Point Quality Check** (see `docs/QUALITY_BAR.md` for details):
+**Critical for new skills:** every skill must pass the **5-Point Quality Check** (see `docs/QUALITY_BAR.md` for details), enforced by `scripts/validate_skills.py`:
 
 1.  **Metadata**: Correct Frontmatter (`name`, `description`).
     - The `name` MUST exactly match the folder name.
@@ -17,36 +16,7 @@ With V4, we raised the bar for quality. Please read the **new Quality Standards*
 4.  **Examples**: At least one copy-paste usage example.
 5.  **Actions**: Must define concrete steps, not just "thoughts".
 
----
-
-## Ways to Contribute
-
-You don't need to be an expert! Here are ways anyone can help:
-
-### 1. Improve Documentation (Easiest!)
-
-- Fix typos or grammar
-- Make explanations clearer
-- Add examples to existing skills
-- Translate documentation to other languages
-
-### 2. Report Issues
-
-- Found something confusing? Tell us!
-- Skill not working? Let us know!
-- Have suggestions? We want to hear them!
-
-### 3. Create New Skills
-
-- Share your expertise as a skill
-- Fill gaps in the current collection
-- Improve existing skills
-
-### 4. Test and Validate
-
-- Try skills and report what works/doesn't work
-- Test on different AI tools
-- Suggest improvements
+On top of the standard bar, every skill in this pack also adds a `## Quantified Output` section with a worked numeric example and a machine-readable result block — see `prd.md` §4.
 
 ---
 
@@ -67,48 +37,36 @@ To run validation, index generation, and README updates locally:
 
 ---
 
-## How to Create a New Skill
+## How to Add a New Skill
 
-### Step-by-Step Guide
+### Step 1: Choose Your Skill Topic
 
-#### Step 1: Choose Your Skill Topic
+It should fit one of the four pillars (AI training & evaluation, context optimization, prompt engineering, AI annotation) and, per this pack's own quantified-output requirement, produce at least one numeric, reproducible metric — not just advice.
 
-Ask yourself: "What do I wish my AI assistant knew better?".
-Example: "I'm good at Docker, let me create a Docker skill".
-
-#### Step 2: Create the Folder Structure
+### Step 2: Create the Folder Structure
 
 Skills live in the `skills/` directory. Use `kebab-case` for folder names.
 
 ```bash
-# Navigate to skills
 cd skills/
-
-# Create your skill folder
-mkdir my-awesome-skill
-cd my-awesome-skill
-
-# Create the SKILL.md file
+mkdir my-new-skill
+cd my-new-skill
 touch SKILL.md
 ```
 
-#### Step 3: Write Your SKILL.md
-
-Every skill needs this basic structure. **Copy this template:**
+### Step 3: Write Your SKILL.md
 
 ```markdown
 ---
-name: my-awesome-skill
+name: my-new-skill
 description: "Brief one-line description of what this skill does"
+risk: safe
+source: self
 ---
 
 # Skill Title
 
-## Overview
-
-Explain what this skill does and when to use it.
-
-## When to Use This Skill
+## When to Use
 
 - Use when [scenario 1]
 - Use when [scenario 2]
@@ -125,89 +83,35 @@ Detailed step-by-step instructions for the AI...
 code example here
 \`\`\`
 
-## Best Practices
+## Quantified Output
 
-- ✅ Do this
-- ❌ Don't do this
+Name the metric(s) this skill produces, the formula, and a worked numeric example.
+
+## Limitations
+
+- What this skill does *not* do
 ```
 
-#### Step 4: Validate (CRITICAL V4 STEP)
-
-Use the canonical validator `scripts/validate_skills.py` via `npm run validate`. **We will not merge PRs that fail this check.**
+### Step 4: Validate
 
 ```bash
 npm run validate        # soft mode (warnings only)
 npm run validate:strict # strict mode (what CI runs)
 ```
 
-This checks:
+This checks: `SKILL.md` exists, frontmatter is correct, name matches folder name, and every quality-bar item above passes.
 
-- ✅ `SKILL.md` exists
-- ✅ Frontmatter is correct
-- ✅ Name matches folder name
-- ✅ Quality Bar checks passed
-
-#### Step 5: Submit Your Skill
+### Step 5: Regenerate the index/catalog
 
 ```bash
-git add skills/my-awesome-skill/
-git commit -m "feat: add my-awesome-skill"
-git push origin my-branch
-```
-
----
-
-## Skill Template (Copy & Paste)
-
-Save time! Copy this template:
-
-```markdown
----
-name: your-skill-name
-description: "One sentence describing what this skill does and when to use it"
----
-
-# Your Skill Name
-
-## Overview
-
-[2-3 sentences explaining what this skill does]
-
-## When to Use This Skill
-
-- Use when you need to [scenario 1]
-- Use when you want to [scenario 2]
-
-## Step-by-Step Guide
-
-### 1. [First Step Name]
-
-[Detailed instructions]
-
-## Examples
-
-### Example 1: [Use Case Name]
-
-\`\`\`language
-// Example code here
-\`\`\`
-
-## Best Practices
-
-- ✅ **Do:** [Good practice]
-- ❌ **Don't:** [What to avoid]
-
-## Troubleshooting
-
-**Problem:** [Common Issue]
-**Solution:** [How to fix it]
+npm run index    # regenerate skills_index.json
+npm run catalog  # regenerate data/catalog.json
+npm run readme   # regenerate the README skill listing
 ```
 
 ---
 
 ## Commit Message Guidelines
-
-Use these prefixes:
 
 - `feat:` - New skill or major feature
 - `docs:` - Documentation improvements
@@ -216,37 +120,17 @@ Use these prefixes:
 - `test:` - Adding or updating tests
 - `chore:` - Maintenance tasks
 
-**Examples:**
-
 ```
-feat: add kubernetes-deployment skill
+feat: add my-new-skill
 docs: improve getting started guide
-fix: correct typo in stripe-integration skill
+fix: correct typo in extraction-prompt-library-finance
 ```
-
----
-
-## Learning Resources
-
-### New to Git/GitHub?
-
-- [GitHub's Hello World Guide](https://guides.github.com/activities/hello-world/)
-- [Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
-
-### New to Markdown?
-
-- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
 ---
 
 ## Code of Conduct
 
-- Be respectful and inclusive
-- Welcome newcomers
-- Focus on constructive feedback
-- **No harmful content**: See `docs/SECURITY_GUARDRAILS.md`.
+- Be respectful and constructive.
+- **No harmful content**: see `docs/SECURITY_GUARDRAILS.md`.
 
----
-
-**Thank you for making this project better for everyone!**
-Every contribution, no matter how small, makes a difference. Whether you fix a typo, improve a sentence, or create a whole new skill - you're helping thousands of developers!
+See [docs/COMMUNITY_GUIDELINES.md](docs/COMMUNITY_GUIDELINES.md) for the full code of conduct.

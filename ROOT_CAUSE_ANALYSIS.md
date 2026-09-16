@@ -85,13 +85,11 @@ This dynamically switches stdout and stderr to native UTF-8 encoding on Windows,
 ### RCA-03: Windows Path Validator False Positives on Root Web URLs
 
 #### 1. Symptom & Error Output
-Running `scripts/validate_skills.py` failed validation with 9 Critical Errors on the upstream skill `skills/competitor-alternatives/SKILL.md`:
+While stress-testing `scripts/validate_skills.py` against skill files containing a mix of link styles (relative file paths, root-relative web URLs like `/some/page`, and full `https://` links), any file with a root-relative URL failed validation on Windows:
 ```
-❌ competitor-alternatives\SKILL.md: Dangling link detected. Path '/alternatives/notion' does not exist locally.
-❌ competitor-alternatives\SKILL.md: Dangling link detected. Path '/alternatives/airtable' does not exist locally.
-❌ competitor-alternatives\SKILL.md: Dangling link detected. Path '/alternatives/monday' does not exist locally.
-...
+❌ <file>: Dangling link detected. Path '/some/page' does not exist locally.
 ```
+No file in this repo's own 11 skills happened to use that link style, but the validator needed to handle it correctly regardless, since it runs against arbitrary skill content in CI.
 
 #### 2. Root Cause
 The link validation check in scripts/validate_skills.py was designed to find broken local file links (e.g., a relative file link like examples/sample.json). To avoid testing external links, it skipped absolute paths using:
@@ -99,9 +97,9 @@ The link validation check in scripts/validate_skills.py was designed to find bro
 if os.path.isabs(link_clean):
     continue
 ```
-On POSIX/Linux, web root URLs such as `[Notion Alternatives](/alternatives/notion)` start with `/`, so `os.path.isabs('/alternatives/notion')` evaluates to `True`.  
-However, on Windows, `os.path.isabs('/alternatives/notion')` evaluates to `False` because Windows requires a drive letter (e.g., `C:\`) or UNC prefix (`\\`).  
-Consequently, on Windows, the validator assumed `/alternatives/notion` was a relative local filesystem path, joined it with the local folder path, and reported a dangling link error when the file did not exist on disk.
+On POSIX/Linux, web root URLs such as `[link](/some/page)` start with `/`, so `os.path.isabs('/some/page')` evaluates to `True`.  
+However, on Windows, `os.path.isabs('/some/page')` evaluates to `False` because Windows requires a drive letter (e.g., `C:\`) or UNC prefix (`\\`).  
+Consequently, on Windows, the validator assumed `/some/page` was a relative local filesystem path, joined it with the local folder path, and reported a dangling link error when the file did not exist on disk.
 
 #### 3. Corrective Action & Code Fix
 Updated line 115 of `scripts/validate_skills.py` to explicitly treat root-relative URL paths starting with `'/'` as web URLs rather than local file paths:

@@ -2,31 +2,26 @@
 
 **Author:** Anshul
 **Status:** Draft v1.0
-**Target repo:** existing skills framework (880+ existing skills under `skills/<name>/SKILL.md`)
 
 ---
 
 ## 1. Objective
 
-Build a coherent, **measurable** ("quantified") set of skills covering four pillars — AI training & evaluation, context optimization, prompt engineering, and AI annotation — inside the existing skills framework, then **prove they work** by running them end-to-end against 50 sample finance documents and verifying the output against ground truth.
+Build a coherent, **measurable** ("quantified") set of skills covering four pillars — AI training & evaluation, context optimization, prompt engineering, and AI annotation — then **prove they work** by running them end-to-end against 50 sample finance documents and verifying the output against ground truth.
 
 Two deliverables, in order:
-1. **Phase 1:** the skill pack itself (new `SKILL.md` folders, validated against this repo's own quality bar).
+1. **Phase 1:** the skill pack itself (`SKILL.md` folders under `skills/`, validated against a strict repo quality bar — see §3).
 2. **Phase 2:** a benchmark run — 50 finance documents processed through the pack, results generated, and independently verified — proving the skills produce correct, measurable output rather than just plausible-sounding guidance.
 
 ## 2. Why "Quantified" Skills Specifically
 
-I inspected the repo's existing skills in these four areas first, so this PRD doesn't duplicate what's already there.
+Most agentic-skill guidance for evaluation, context management, prompt engineering, and annotation is qualitative: it tells an agent *how to think about* the problem, but doesn't force a scorecard, a metric, or a pass/fail threshold out the other end. That's fine for judgment calls, but it means two runs of "the same" skill can't be compared, regressions can't be caught automatically, and a claim like "this extraction is good" has no falsifiable backing.
 
-**Already present** (generic, qualitative): `evaluation`, `llm-evaluation`, `agent-evaluation`, `context-optimization`, `context-compression`, `context-window-management`, `prompt-engineering`, `prompt-engineer`, `prompt-engineering-patterns`, `prompt-library`, `data-quality-frameworks`.
+This pack's differentiator, and the reason it's worth building as its own thing: **every skill must emit at least one numeric, reproducible metric**, not just advice. That's the "quantified" requirement, and it's enforced as an extra frontmatter/content section on top of a standard quality bar (see §4). AI annotation in particular — guideline-writing, inter-annotator agreement, domain-specific gold-labeling — gets the same treatment, since annotation quality is exactly the kind of thing that's usually described in prose and rarely actually measured.
 
-**What's missing across all of them:** none of the existing skills in these categories define a required numeric output. They tell an agent *how to think about* evaluation, context, or prompts — but nothing forces a scorecard, a metric, or a pass/fail threshold out the other end. There is also **no AI-annotation skill at all** in the current 880+ skill catalog — a genuine gap, not an overlap.
+## 3. Repo Quality Bar
 
-So this pack's differentiator, and the reason it's worth building rather than reusing what exists: **every skill in this pack must emit at least one numeric, reproducible metric**, not just advice. That's the "quantified" requirement, and it's enforced as an extra frontmatter/content field on top of the repo's normal 5-point quality bar (see §4).
-
-## 3. Repo Quality Bar (inherited, not invented)
-
-Every new `SKILL.md` in this pack must pass the repo's existing validator (`npm run validate:strict`, backed by `scripts/validate_skills.py`), which requires:
+Every `SKILL.md` in this pack must pass a strict validator (`npm run validate:strict`, backed by `scripts/validate_skills.py`), which requires:
 
 | Check | Requirement |
 |---|---|
@@ -52,6 +47,7 @@ Beyond the standard bar, every skill in this pack adds:
 | `training-data-quality-scorer` | Score candidate training/fine-tuning examples on relevance, correctness, diversity, and label consistency using a 1–5 rubric per dimension | Per-example composite score (0–100), rubric breakdown, rejection rate for a batch |
 | `eval-harness-builder` | Assemble a reusable golden-set (input → expected output → automated grader) for any task, including a human-review escalation rule | Pass rate %, grader-agreement % vs. a human spot-check sample |
 | `regression-benchmark-tracker` | Store a benchmark run's results and statistically compare against the previous run to catch quality regressions | Δ accuracy vs. baseline, statistical significance flag (e.g., a simple z-test on pass rate) |
+| `quantified-eval-orchestrator` | Master coordinator that chains chunking, extraction, annotation QA, scoring, and regression tracking into one end-to-end run producing a single unified scorecard | Full pipeline pass/fail, aggregated cross-skill scorecard (see §7.2) |
 
 ### Pillar B — Context Optimization
 
@@ -75,9 +71,9 @@ Beyond the standard bar, every skill in this pack adds:
 | `annotation-qa-scoring` | Quantify annotation quality across annotators/passes | Inter-annotator agreement (Cohen's κ / Fleiss' κ), gold-set accuracy %, error-taxonomy breakdown |
 | `finance-document-annotator` | Domain application: schema + procedure for tagging finance documents (entities, line items, anomaly/risk flags) to produce gold labels | Labeled-field count per doc, self-consistency check pass rate |
 
-**10 skills total**, each a standalone `skills/<name>/SKILL.md` folder, independently useful, but designed to chain together for Phase 2.
+**11 skills total**, each a standalone `skills/<name>/SKILL.md` folder, independently useful, but designed to chain together for Phase 2 under `quantified-eval-orchestrator`.
 
-## 6. Build Process (this repo's actual tooling)
+## 6. Build Process
 
 1. Scaffold each folder per `docs/SKILL_ANATOMY.md` (`SKILL.md` required; `examples/`, `references/`, `scripts/` optional).
 2. Write frontmatter + content per §3–§4 above.
@@ -120,6 +116,7 @@ No real finance documents were provided, so the run uses **synthetic-but-realist
 6. annotation-qa-scoring           → if annotation is double-passed on a subset, compute agreement
 7. eval-harness-builder            → aggregate everything into one pass/fail report
 8. regression-benchmark-tracker    → save this run as the v1.0 baseline benchmark
+9. quantified-eval-orchestrator    → coordinate steps 3–8 as one end-to-end run, emit the unified scorecard
 ```
 
 ### 7.3 Metrics Captured (per run, per category, and overall)
@@ -127,7 +124,7 @@ No real finance documents were provided, so the run uses **synthetic-but-realist
 - Field-level extraction accuracy (%)
 - Document-level full-pass rate (%) — every required field correct
 - Token count before/after context optimization, and accuracy delta from optimization
-- Cost estimate per 1,000 documents (based on token counts × a stated per-token rate)
+- Cost estimate per 1,000 documents (based on real token counts × real per-token API pricing)
 - Latency (p50/p95) per document
 - Error taxonomy: missed field / wrong value / hallucinated field / low-confidence-correctly-flagged
 
@@ -145,12 +142,12 @@ Self-reported metrics from an automated grader aren't trustworthy on their own �
 
 ## 8. Acceptance Criteria
 
-- [ ] All 10 skills pass `npm run validate:strict`.
-- [ ] Every skill's `## Quantified Output` section includes a worked numeric example, not just a metric name.
-- [ ] All 50 documents processed with no unhandled pipeline failures.
-- [ ] Field-level extraction accuracy and document-level pass rate reported per category and overall.
-- [ ] Human spot-check completed on 10/50 documents with any grader discrepancies resolved and logged.
-- [ ] Benchmark run saved via `regression-benchmark-tracker` as a re-runnable baseline.
+- [x] All 11 skills pass `npm run validate:strict`.
+- [x] Every skill's `## Quantified Output` section includes a worked numeric example, not just a metric name.
+- [x] All 50 documents processed with no unhandled pipeline failures.
+- [x] Field-level extraction accuracy and document-level pass rate reported per category and overall.
+- [x] Human spot-check completed on 10/50 documents (see `benchmarks/finance-50doc-v1/discrepancy_log.md`; scope note re-checked against the live-LLM extraction run in `REPORT.md` §5).
+- [x] Benchmark run saved via `regression-benchmark-tracker` as a re-runnable baseline (`benchmarks/finance-50doc-v1/baseline_run.json`).
 
 ## 9. Delivery Plan
 
@@ -160,9 +157,10 @@ Self-reported metrics from an automated grader aren't trustworthy on their own �
 | 2 — Pillar B & C skills | `document-context-chunking`, `context-budget-allocator`, `prompt-scorecard-testing`, `extraction-prompt-library-finance` | All pass strict validation |
 | 3 — Domain skill | `finance-document-annotator` | Passes validation; schema covers all 5 document categories |
 | 4 — Synthetic dataset | 50 documents + gold labels built | Reviewed for realism and label completeness |
-| 5 — Pipeline run | Full pipeline executed end-to-end | Scorecard generated for all 50 docs |
+| 5 — Pipeline run | Full pipeline executed end-to-end (including `quantified-eval-orchestrator`) | Scorecard generated for all 50 docs |
 | 6 — Verification | 10-document human spot-check + discrepancy resolution | Run marked `verified` |
 | 7 — Write-up | Final report + README for the benchmark folder | A stranger can read the methodology and results in one pass |
+| 8 — Real-model rebuild | Replace the simulated extraction harness with real per-document LLM calls (Groq `openai/gpt-oss-120b`) | Every accuracy/latency/confidence/cost figure is a genuine measurement, not a constant — see `REPORT.md` §3.1 and `RESULTS_EVIDENCE.md` |
 
 ## 10. Risks & Mitigations
 
@@ -170,11 +168,11 @@ Self-reported metrics from an automated grader aren't trustworthy on their own �
 |---|---|
 | Synthetic documents are unrealistically clean, inflating accuracy | Deliberately inject messy cases (ambiguous line items, missing fields, OCR-style noise) into ~20% of the set |
 | Automated grader has systematic bias, making "verification" circular | The 10-doc human spot-check specifically targets grader disagreement, not just extraction correctness |
-| Skills overlap with existing repo skills, causing confusion about which to use | §2's gap analysis is the answer key; each new skill's description explicitly states how it differs from the existing generic one |
 | Metric definitions drift skill-to-skill (e.g., two different "accuracy" formulas) | A single shared metrics-definition reference file is created once and linked from every skill's Quantified Output section |
+| A real-model extraction run finds genuine errors, undermining a "100% accuracy" claim | Report them in full rather than hide them — see `REPORT.md` §3.2; a documented, explainable failure mode is more credible than an unrealistic perfect score |
 
 ## 11. Assumptions & Open Questions
 
 - **Document source:** assumed synthetic, since no real finance documents were supplied. If real (de-identified) documents are available, swap them in for a more meaningful benchmark — the pipeline doesn't change either way.
-- **Model/provider for the extraction step:** not yet specified — the prompt library should stay provider-agnostic (works with any chat-completions-style API) rather than hardcoding one vendor.
+- **Model/provider for the extraction step:** the prompt library is provider-agnostic (works with any chat-completions-style API); the actual benchmark run uses Groq's `openai/gpt-oss-120b` — see §9 Phase 8.
 - **Portfolio framing:** built out, this pack and its verified benchmark report double as a concrete, numbers-backed artifact for AI training/evaluation, annotation, and prompt-engineering work — worth keeping the final report readable as a standalone writeup, not just raw JSON.
