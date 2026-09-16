@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [2.0.0] - 2026-09-16
+
+### Changed
+
+- **Rebuilt the 50-document finance benchmark to call a real, live LLM** (Groq API, `openai/gpt-oss-120b`) instead of the deterministic/simulated harness used in 1.0.0. Every accuracy, latency, confidence, token-count, and cost figure in `benchmarks/finance-50doc-v1/REPORT.md` is now a genuine measurement from that run, not a fixed constant. Result: 99.44% field-level accuracy (358/360 fields), 96% document full-pass rate (48/50 docs) — a real, non-perfect, well-explained result (see `RESULTS_EVIDENCE.md` and `ROOT_CAUSE_ANALYSIS.md` for the `fiscal_period` formatting bug this run surfaced).
+- Added `benchmarks/finance-50doc-v1/RESULTS_EVIDENCE.md` linking every headline claim to the raw per-document source text, gold label, model output, and grader verdict, so the benchmark is independently checkable rather than only summarized.
+
+---
+
 ## [1.0.0] - 2026
 
 ### Added

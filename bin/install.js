@@ -112,15 +112,15 @@ Options:
   --kiro         Install to ~/.kiro/skills (Kiro CLI)
   --antigravity  Install to ~/.gemini/antigravity/skills (Antigravity)
   --path <dir>   Install to <dir> (default: ~/.gemini/antigravity/skills)
-  --version <ver>  After clone, checkout tag v<ver> (e.g. 4.6.0 -> v4.6.0)
-  --tag <tag>      After clone, checkout this tag (e.g. v4.6.0)
+  --version <ver>  After clone, checkout tag v<ver> (e.g. 6.0.0 -> v6.0.0)
+  --tag <tag>      After clone, checkout this tag (e.g. v6.0.0)
 
 Examples:
   npx quantified-ai-skills
   npx quantified-ai-skills --cursor
   npx quantified-ai-skills --kiro
   npx quantified-ai-skills --antigravity
-  npx quantified-ai-skills --version 4.6.0
+  npx quantified-ai-skills --version 6.0.0
   npx quantified-ai-skills --path ./my-skills
 `);
 }
