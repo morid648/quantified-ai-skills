@@ -1,0 +1,101 @@
+[
+  {
+    "id": "annotation-guideline-writer",
+    "path": "skills\\annotation-guideline-writer",
+    "category": "uncategorized",
+    "name": "annotation-guideline-writer",
+    "description": "Authors unambiguous annotation guidelines, schemas, edge-case rules, and worked examples, evaluating guidelines against a quantified completeness score.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "annotation-qa-scoring",
+    "path": "skills\\annotation-qa-scoring",
+    "category": "uncategorized",
+    "name": "annotation-qa-scoring",
+    "description": "Calculates inter-annotator agreement (Cohen's/Fleiss' kappa), gold-set accuracy, and error taxonomy breakdowns to quantify annotation quality and consistency.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "context-budget-allocator",
+    "path": "skills\\context-budget-allocator",
+    "category": "uncategorized",
+    "name": "context-budget-allocator",
+    "description": "Allocates fixed token budgets across multi-document sources via keep/summarize/drop rules, quantifying budget utilization and downstream task accuracy impact.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "document-context-chunking",
+    "path": "skills\\document-context-chunking",
+    "category": "uncategorized",
+    "name": "document-context-chunking",
+    "description": "Chunks complex financial documents preserving cross-references and tables, quantifying token reduction and information retention via factual probes.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "eval-harness-builder",
+    "path": "skills\\eval-harness-builder",
+    "category": "uncategorized",
+    "name": "eval-harness-builder",
+    "description": "Assembles golden-set evaluation harnesses (input, expected output, automated grader) with pass rate thresholds and human-review escalation rules.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "extraction-prompt-library-finance",
+    "path": "skills\\extraction-prompt-library-finance",
+    "category": "uncategorized",
+    "name": "extraction-prompt-library-finance",
+    "description": "Production prompt templates and JSON schemas for extracting structured fields from 5 financial document categories with mandatory field-level confidence scores.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "finance-document-annotator",
+    "path": "skills\\finance-document-annotator",
+    "category": "uncategorized",
+    "name": "finance-document-annotator",
+    "description": "Annotation schemas and procedures for tagging financial documents to produce gold labels, enforcing arithmetic self-consistency and anomaly flag verification.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "prompt-scorecard-testing",
+    "path": "skills\\prompt-scorecard-testing",
+    "category": "uncategorized",
+    "name": "prompt-scorecard-testing",
+    "description": "Runs multi-variant prompt A/B testing against labeled test sets, scoring variants across accuracy/F1, latency (p50/p95), and cost per 1,000 calls.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "quantified-eval-orchestrator",
+    "path": "skills\\quantified-eval-orchestrator",
+    "category": "uncategorized",
+    "name": "quantified-eval-orchestrator",
+    "description": "Orchestrates end-to-end quantified AI pipelines across data scoring, context optimization, prompt extraction, annotation QA, and regression benchmarking.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "regression-benchmark-tracker",
+    "path": "skills\\regression-benchmark-tracker",
+    "category": "uncategorized",
+    "name": "regression-benchmark-tracker",
+    "description": "Tracks benchmark run histories, statistically evaluates metric deltas vs baselines via z-tests, and alerts on performance regressions.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "training-data-quality-scorer",
+    "path": "skills\\training-data-quality-scorer",
+    "category": "uncategorized",
+    "name": "training-data-quality-scorer",
+    "description": "Evaluates candidate training or fine-tuning examples using a 4-dimension rubric (1-5), emitting a 0-100 composite quality score and batch rejection rate.",
+    "risk": "safe",
+    "source": "self"
+  }
+]

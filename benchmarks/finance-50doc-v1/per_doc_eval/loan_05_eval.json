@@ -1,0 +1,67 @@
+{
+  "doc_id": "loan_05",
+  "category": "loan_application",
+  "is_noisy": false,
+  "fields_total": 7,
+  "fields_correct": 7,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "applicant_name": {
+      "extracted": "Tariq Abdul Mansour",
+      "expected": "Tariq Abdul Mansour",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "id_type": {
+      "extracted": "PASSPORT",
+      "expected": "PASSPORT",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "id_number": {
+      "extracted": "N77102941",
+      "expected": "N77102941",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "annual_income": {
+      "extracted": 160000.0,
+      "expected": 160000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "requested_amount": {
+      "extracted": 40000.0,
+      "expected": 40000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "loan_purpose": {
+      "extracted": "Solar Panel Installation",
+      "expected": "Solar Panel Installation",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "risk_flags": {
+      "extracted": [],
+      "expected": [],
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

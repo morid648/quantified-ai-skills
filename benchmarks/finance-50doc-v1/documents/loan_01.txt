@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Jonathan Edward Vance
+Identification Type:      SSN
+ID Number:                XXX-XX-4912
+--------------------------------------------------
+Stated Annual Income:     $145,000.00
+Requested Loan Amount:    $35,000.00
+Stated Purpose:           Debt Consolidation
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

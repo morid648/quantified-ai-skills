@@ -1,0 +1,31 @@
+{
+  "doc_id": "inv_02",
+  "category": "invoice",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "vendor_name": "Meridian Office Solutions LLC",
+    "invoice_number": "MOS-88219",
+    "invoice_date": "2024-01-22",
+    "due_date": "2024-02-22",
+    "subtotal": 5400.0,
+    "tax_amount": 432.0,
+    "total_amount": 5832.0,
+    "line_items": [
+      {
+        "desc": "Ergonomic Mesh Task Chairs",
+        "qty": 8.0,
+        "unit": 350.0,
+        "amt": 2800.0
+      },
+      {
+        "desc": "Motorized Sit-Stand Desks",
+        "qty": 4.0,
+        "unit": 650.0,
+        "amt": 2600.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

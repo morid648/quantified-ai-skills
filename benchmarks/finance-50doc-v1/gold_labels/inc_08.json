@@ -1,0 +1,18 @@
+{
+  "doc_id": "inc_08",
+  "category": "income_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "company_name": "OmniMedia Publishing Group",
+    "fiscal_period": "Q1 2024",
+    "total_revenue": 620000.0,
+    "cost_of_goods_sold": 180000.0,
+    "gross_profit": 440000.0,
+    "operating_expenses": 310000.0,
+    "operating_income": 130000.0,
+    "net_income": 104000.0
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

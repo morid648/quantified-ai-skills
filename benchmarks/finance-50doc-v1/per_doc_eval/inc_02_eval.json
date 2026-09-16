@@ -1,0 +1,75 @@
+{
+  "doc_id": "inc_02",
+  "category": "income_statement",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "company_name": {
+      "extracted": "Vanguard Biotech Inc",
+      "expected": "Vanguard Biotech Inc",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "fiscal_period": {
+      "extracted": "Q1 2024",
+      "expected": "Q1 2024",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_revenue": {
+      "extracted": 840000.0,
+      "expected": 840000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "cost_of_goods_sold": {
+      "extracted": 210000.0,
+      "expected": 210000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "gross_profit": {
+      "extracted": 630000.0,
+      "expected": 630000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_expenses": {
+      "extracted": 490000.0,
+      "expected": 490000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_income": {
+      "extracted": 140000.0,
+      "expected": 140000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "net_income": {
+      "extracted": 112000.0,
+      "expected": 112000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

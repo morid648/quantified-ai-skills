@@ -1,0 +1,14 @@
+==================================================
+        MONTHLY COMMERCIAL ACCOUNT STATEMENT      
+==================================================
+Financial Institution: Pacific Merchant Bank
+Account Number:        1044-8839-01
+Statement Period:      2024-02-01 to 2024-02-29
+--------------------------------------------------
+Opening Balance:       $98600.00
+Closing Balance:       $84200.00
+--------------------------------------------------
+TRANSACTION LEDGER:
+Date         Description                Amount       Balance   
+2024-02-09   Software Tool Subscriptions -$14400.00   $84200.00 
+==================================================

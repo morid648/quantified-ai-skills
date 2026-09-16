@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Kevin Alexander O'Connor
+Identification Type:      TAX_ID
+ID Number:                XX-XXX4419
+--------------------------------------------------
+Stated Annual Income:     $175,000.00
+Requested Loan Amount:    $45,000.00
+Stated Purpose:           Inventory Equipment Bridge
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

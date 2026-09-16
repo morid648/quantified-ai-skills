@@ -1,0 +1,17 @@
+{
+  "doc_id": "loan_03",
+  "category": "loan_application",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "applicant_name": "Robert Taylor Sterling",
+    "id_type": "TAX_ID",
+    "id_number": "XX-XXX7701",
+    "annual_income": 220000.0,
+    "requested_amount": 50000.0,
+    "loan_purpose": "Working Capital Expansion",
+    "risk_flags": []
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

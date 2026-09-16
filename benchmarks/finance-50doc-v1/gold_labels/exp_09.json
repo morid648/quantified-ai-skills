@@ -1,0 +1,35 @@
+{
+  "doc_id": "exp_09",
+  "category": "expense_report",
+  "is_noisy": true,
+  "injected_flaws": [
+    "missing_receipt_attachment_flag",
+    "pending_supervisor_approval"
+  ],
+  "fields": {
+    "employee_name": "Arthur Pendelton",
+    "report_id": "EXP-2024-089",
+    "submission_date": "2024-03-28",
+    "total_amount": 478.5,
+    "approval_status": "PENDING",
+    "expense_items": [
+      {
+        "date": "2024-03-24",
+        "category": "LODGING",
+        "merchant": "Boutique Hotel (Missing Receipt Note)",
+        "amount": 450.0
+      },
+      {
+        "date": "2024-03-25",
+        "category": "MEALS",
+        "merchant": "Airport Cafe",
+        "amount": 28.5
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [
+    "missing_receipt_attachment_flag",
+    "pending_supervisor_approval"
+  ]
+}

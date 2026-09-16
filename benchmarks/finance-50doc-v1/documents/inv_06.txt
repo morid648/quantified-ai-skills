@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Vanguard Hardware Distribution
+Invoice No:   VHD-77301
+Invoice Date: 2024-03-02
+Payment Due Date: 2024-04-02
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Rackmount Server Nodes 1U        3.0    $3200.00     $9600.00  
+100GbE Managed Switch            1.0    $4200.00     $4200.00  
+--------------------------------------------------
+Subtotal:                                       $13800.00
+Sales / Service Tax:                            $1104.00
+Total Amount Due:                               $14904.00
+==================================================

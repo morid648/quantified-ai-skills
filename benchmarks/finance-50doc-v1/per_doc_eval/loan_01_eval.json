@@ -1,0 +1,67 @@
+{
+  "doc_id": "loan_01",
+  "category": "loan_application",
+  "is_noisy": false,
+  "fields_total": 7,
+  "fields_correct": 7,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "applicant_name": {
+      "extracted": "Jonathan Edward Vance",
+      "expected": "Jonathan Edward Vance",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "id_type": {
+      "extracted": "SSN",
+      "expected": "SSN",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "id_number": {
+      "extracted": "XXX-XX-4912",
+      "expected": "XXX-XX-4912",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "annual_income": {
+      "extracted": 145000.0,
+      "expected": 145000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "requested_amount": {
+      "extracted": 35000.0,
+      "expected": 35000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "loan_purpose": {
+      "extracted": "Debt Consolidation",
+      "expected": "Debt Consolidation",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "risk_flags": {
+      "extracted": [],
+      "expected": [],
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

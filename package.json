@@ -1,0 +1,39 @@
+{
+  "name": "quantified-ai-skills-portfolio",
+  "version": "6.0.0",
+  "description": "Production-grade quantified AI skills suite with 50-document financial benchmark, evaluation harnesses, and multi-agent workflows.",
+  "license": "MIT",
+  "author": "Anshul",
+  "scripts": {
+    "validate": "python3 scripts/validate_skills.py",
+    "validate:strict": "python3 scripts/validate_skills.py --strict",
+    "index": "python3 scripts/generate_index.py",
+    "readme": "python3 scripts/update_readme.py",
+    "catalog": "node scripts/build-catalog.js",
+    "benchmark": "python3 scripts/run_finance_benchmark.py",
+    "verify": "python3 scripts/tests/verify_repo_integrity.py",
+    "test": "node scripts/tests/validate_skills_headings.test.js && python3 scripts/tests/test_validate_skills_headings.py && python3 scripts/tests/verify_repo_integrity.py",
+    "build": "npm run validate:strict && npm run index && npm run readme && npm run catalog"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.2"
+  },
+  "bin": {
+    "quantified-ai-skills": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "skills",
+    "data"
+  ],
+  "keywords": [
+    "claude-code",
+    "cursor",
+    "gemini-cli",
+    "antigravity",
+    "agentic-skills",
+    "ai-evaluations",
+    "financial-extraction",
+    "benchmark"
+  ]
+}

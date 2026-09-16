@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_05",
+  "category": "invoice",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "Hyperion Cybersecurity Corp",
+      "expected": "Hyperion Cybersecurity Corp",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "HYP-2024-501",
+      "expected": "HYP-2024-501",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-02-18",
+      "expected": "2024-02-18",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": "2024-03-20",
+      "expected": "2024-03-20",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "subtotal": {
+      "extracted": 24500.0,
+      "expected": 24500.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 1960.0,
+      "expected": 1960.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 26460.0,
+      "expected": 26460.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Penetration Testing & Red Team Audit",
+          "qty": 1.0,
+          "unit": 16000.0,
+          "amt": 16000.0
+        },
+        {
+          "desc": "SOC-2 Type II Compliance Readiness",
+          "qty": 1.0,
+          "unit": 8500.0,
+          "amt": 8500.0
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Penetration Testing & Red Team Audit",
+          "qty": 1.0,
+          "unit": 16000.0,
+          "amt": 16000.0
+        },
+        {
+          "desc": "SOC-2 Type II Compliance Readiness",
+          "qty": 1.0,
+          "unit": 8500.0,
+          "amt": 8500.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

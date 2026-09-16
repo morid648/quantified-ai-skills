@@ -1,0 +1,8 @@
+{
+  "doc_id": "bank_10",
+  "original_tokens": 162,
+  "optimized_tokens": 119,
+  "compression_ratio_pct": 26.54,
+  "information_retention_pct": 100.0,
+  "content": "MONTHLY COMMERCIAL ACCOUNT STATEMENT\nFinancial Institution: Keystone National Bank\nAccount Number:        4490-8811-00\nStatement Period:      2024-04-01 to 2024-04-30\n--------------------------------------------------\nOpening Balance:       $2100.00\nClosing Balance:       $-450.00\n--------------------------------------------------\nTRANSACTION LEDGER:\nDate         Description                Amount       Balance\n2024-04-12   ACH Debit: Equipment Rental -$2550.00    -$450.00"
+}

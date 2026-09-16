@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Valerie Nicole Stone
+Identification Type:      PASSPORT
+ID Number:                EXPIRED-P33019
+--------------------------------------------------
+Stated Annual Income:     $95,000.00
+Requested Loan Amount:    $30,000.00
+Stated Purpose:           Refinancing Secondary Debt
+--------------------------------------------------
+Underwriter Risk Flags:   EXPIRED_IDENTIFICATION, IDENTITY_VERIFICATION_FAILED
+==================================================

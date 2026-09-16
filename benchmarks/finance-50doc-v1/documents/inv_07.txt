@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  BlueWave Media & Advertising
+Invoice No:   BWM-2024-039
+Invoice Date: 2024-03-12
+Payment Due Date: 2024-04-12
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Digital Ad Placement Retainer    1.0    $8000.00     $8000.00  
+Creative Production & Video Assets 1.0    $4500.00     $4500.00  
+--------------------------------------------------
+Subtotal:                                       $12500.00
+Sales / Service Tax:                            $1000.00
+Total Amount Due:                               $13500.00
+==================================================

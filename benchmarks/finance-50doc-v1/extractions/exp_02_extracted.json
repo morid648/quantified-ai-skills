@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_02",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 416,
+  "out_tokens": 91,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "Michael Chang",
+    "report_id": "EXP-2024-082",
+    "submission_date": "2024-02-18",
+    "total_amount": 327.4,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-02-15",
+        "category": "SOFTWARE",
+        "merchant": "JetBrains License",
+        "amount": 249.0
+      },
+      {
+        "date": "2024-02-16",
+        "category": "SUPPLIES",
+        "merchant": "Amazon Business",
+        "amount": 78.4
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

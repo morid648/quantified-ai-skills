@@ -1,0 +1,35 @@
+{
+  "doc_id": "exp_10",
+  "category": "expense_report",
+  "is_noisy": true,
+  "injected_flaws": [
+    "duplicate_transaction_same_day",
+    "rejected_policy_flag"
+  ],
+  "fields": {
+    "employee_name": "Chloe Bennett",
+    "report_id": "EXP-2024-090",
+    "submission_date": "2024-04-02",
+    "total_amount": 130.0,
+    "approval_status": "REJECTED",
+    "expense_items": [
+      {
+        "date": "2024-03-30",
+        "category": "MEALS",
+        "merchant": "Corner Bistro (Duplicate Entry A)",
+        "amount": 65.0
+      },
+      {
+        "date": "2024-03-30",
+        "category": "MEALS",
+        "merchant": "Corner Bistro (Duplicate Entry B)",
+        "amount": 65.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [
+    "duplicate_transaction_same_day",
+    "rejected_policy_flag"
+  ]
+}

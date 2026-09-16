@@ -1,0 +1,85 @@
+{
+  "doc_id": "exp_02",
+  "category": "expense_report",
+  "is_noisy": false,
+  "fields_total": 6,
+  "fields_correct": 6,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "employee_name": {
+      "extracted": "Michael Chang",
+      "expected": "Michael Chang",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "report_id": {
+      "extracted": "EXP-2024-082",
+      "expected": "EXP-2024-082",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "submission_date": {
+      "extracted": "2024-02-18",
+      "expected": "2024-02-18",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 327.4,
+      "expected": 327.4,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "approval_status": {
+      "extracted": "APPROVED",
+      "expected": "APPROVED",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "expense_items": {
+      "extracted": [
+        {
+          "date": "2024-02-15",
+          "category": "SOFTWARE",
+          "merchant": "JetBrains License",
+          "amount": 249.0
+        },
+        {
+          "date": "2024-02-16",
+          "category": "SUPPLIES",
+          "merchant": "Amazon Business",
+          "amount": 78.4
+        }
+      ],
+      "expected": [
+        {
+          "date": "2024-02-15",
+          "category": "SOFTWARE",
+          "merchant": "JetBrains License",
+          "amount": 249.0
+        },
+        {
+          "date": "2024-02-16",
+          "category": "SUPPLIES",
+          "merchant": "Amazon Business",
+          "amount": 78.4
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

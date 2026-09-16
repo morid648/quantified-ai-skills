@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Chloe Bennett
+Report ID:        EXP-2024-090
+Submission Date:  2024-04-02
+Approval Status:  REJECTED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-30   MEALS      Corner Bistro (Duplicate Entry A) $65.00
+2024-03-30   MEALS      Corner Bistro (Duplicate Entry B) $65.00
+--------------------------------------------------
+Total Claimed Amount:                            $130.00
+==================================================

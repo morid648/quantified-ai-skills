@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Tariq Abdul Mansour
+Identification Type:      PASSPORT
+ID Number:                N77102941
+--------------------------------------------------
+Stated Annual Income:     $160,000.00
+Requested Loan Amount:    $40,000.00
+Stated Purpose:           Solar Panel Installation
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

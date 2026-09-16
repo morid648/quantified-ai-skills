@@ -1,0 +1,28 @@
+{
+  "doc_id": "inc_02",
+  "category": "income_statement",
+  "is_noisy": false,
+  "in_tokens": 422,
+  "out_tokens": 60,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "company_name": "Vanguard Biotech Inc",
+    "fiscal_period": "Q1 2024",
+    "total_revenue": 840000.0,
+    "cost_of_goods_sold": 210000.0,
+    "gross_profit": 630000.0,
+    "operating_expenses": 490000.0,
+    "operating_income": 140000.0,
+    "net_income": 112000.0
+  },
+  "field_confidence": {
+    "company_name": 0.98,
+    "fiscal_period": 0.98,
+    "total_revenue": 0.98,
+    "cost_of_goods_sold": 0.98,
+    "gross_profit": 0.98,
+    "operating_expenses": 0.98,
+    "operating_income": 0.98,
+    "net_income": 0.98
+  }
+}

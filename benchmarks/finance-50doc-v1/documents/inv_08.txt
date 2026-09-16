@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Pinnacle Facilities Management
+Invoice No:   PFM-11082
+Invoice Date: 2024-03-20
+Payment Due Date: 2024-04-20
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Monthly Commercial Janitorial Service 1.0    $2400.00     $2400.00  
+HVAC Filter Replacement & Inspection 1.0    $850.00      $850.00   
+--------------------------------------------------
+Subtotal:                                       $3250.00
+Sales / Service Tax:                            $260.00
+Total Amount Due:                               $3510.00
+==================================================

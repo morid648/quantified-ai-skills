@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Acme Industrial Supplies
+Invoice No:   AIS-66100
+Invoice Date: 2024-04-01
+Payment Due Date: 2024-05-01
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Packaging Crates Grade A         100.0  $25.00       $2500.00  
+Industrial Strapping Rolls       10.0   $80.00       $800.00   
+--------------------------------------------------
+Subtotal:                                       $3300.00
+Sales / Service Tax:                            $264.00
+Total Amount Due:                               $3574.00
+==================================================

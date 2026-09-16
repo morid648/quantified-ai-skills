@@ -1,0 +1,82 @@
+{
+  "benchmark_id": "finance-50doc-v1",
+  "benchmark_title": "Quantified Skills Finance Validation Run",
+  "timestamp": "2026-09-15T18:26:31.046009+00:00",
+  "verification_status": "verified",
+  "sample_size": 50,
+  "overall_metrics": {
+    "field_accuracy_pct": 100.0,
+    "document_full_pass_rate_pct": 100.0,
+    "total_fields_evaluated": 360,
+    "correct_fields_count": 360,
+    "latency_p50_ms": 1200.01,
+    "latency_p95_ms": 1200.01,
+    "total_input_tokens": 21246,
+    "total_output_tokens": 4151,
+    "cost_per_1000_documents_usd": 0.1136
+  },
+  "category_breakdown": {
+    "bank_statement": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 70,
+      "correct_fields": 70,
+      "field_accuracy_pct": 100.0
+    },
+    "expense_report": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 60,
+      "correct_fields": 60,
+      "field_accuracy_pct": 100.0
+    },
+    "income_statement": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 80,
+      "correct_fields": 80,
+      "field_accuracy_pct": 100.0
+    },
+    "invoice": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 80,
+      "correct_fields": 80,
+      "field_accuracy_pct": 100.0
+    },
+    "loan_application": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 70,
+      "correct_fields": 70,
+      "field_accuracy_pct": 100.0
+    }
+  },
+  "error_taxonomy": {
+    "correct": 360,
+    "missed_field": 0,
+    "wrong_value": 0,
+    "hallucinated_field": 0,
+    "low_confidence_correctly_flagged": 4
+  },
+  "inter_annotator_agreement": {
+    "skill_name": "annotation-qa-scoring",
+    "double_annotated_doc_count": 10,
+    "total_fields_compared": 72,
+    "agreed_fields_count": 70,
+    "observed_agreement_pct": 97.22,
+    "expected_agreement_pct": 70.6,
+    "cohens_kappa": 0.9055,
+    "agreement_tier": "Almost Perfect"
+  },
+  "context_optimization_summary": {
+    "documents_optimized": 20,
+    "mean_compression_ratio_pct": 24.37,
+    "information_retention_pct": 100.0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "doc_id": "loan_09",
+  "category": "loan_application",
+  "is_noisy": true,
+  "in_tokens": 405,
+  "out_tokens": 64,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "applicant_name": "Bradley Thomas Thorne",
+    "id_type": "SSN",
+    "id_number": "XXX-XX-8831",
+    "annual_income": 45000.0,
+    "requested_amount": 350000.0,
+    "loan_purpose": "Speculative Real Estate",
+    "risk_flags": [
+      "DEBT_TO_INCOME_HIGH",
+      "SPECULATIVE_PURPOSE_FLAG"
+    ]
+  },
+  "field_confidence": {
+    "applicant_name": 0.82,
+    "id_type": 0.82,
+    "id_number": 0.82,
+    "annual_income": 0.82,
+    "requested_amount": 0.82,
+    "loan_purpose": 0.82,
+    "risk_flags": 0.92
+  }
+}

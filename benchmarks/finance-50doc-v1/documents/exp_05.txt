@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Marcus Vance
+Report ID:        EXP-2024-085
+Submission Date:  2024-03-05
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-01   SOFTWARE   GitHub Enterprise    $420.00
+2024-03-02   SOFTWARE   Figma Professional   $180.00
+--------------------------------------------------
+Total Claimed Amount:                            $600.00
+==================================================

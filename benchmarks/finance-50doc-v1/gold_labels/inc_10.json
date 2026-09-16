@@ -1,0 +1,22 @@
+{
+  "doc_id": "inc_10",
+  "category": "income_statement",
+  "is_noisy": true,
+  "injected_flaws": [
+    "arithmetic_rounding_discrepancy"
+  ],
+  "fields": {
+    "company_name": "Delta Robotics Lab",
+    "fiscal_period": "Q1 2024",
+    "total_revenue": 2200000.0,
+    "cost_of_goods_sold": 980000.0,
+    "gross_profit": 1220000.0,
+    "operating_expenses": 750000.0,
+    "operating_income": 470000.0,
+    "net_income": 371000.0
+  },
+  "self_consistency_passed": false,
+  "risk_flags": [
+    "arithmetic_rounding_discrepancy"
+  ]
+}

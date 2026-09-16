@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Summit Logistics & Freight
+Invoice No:   SLF-44102
+Invoice Date: 2024-02-10
+Payment Due Date: 2024-02-25
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Interstate Freight Transit - 2 TEU 2.0    $1850.00     $3700.00  
+Fuel Surcharge                   1.0    $420.50      $420.50   
+--------------------------------------------------
+Subtotal:                                       $4120.50
+Sales / Service Tax:                            $206.03
+Total Amount Due:                               $4326.53
+==================================================

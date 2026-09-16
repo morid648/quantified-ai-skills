@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    David Rossi
+Report ID:        EXP-2024-083
+Submission Date:  2024-02-25
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-02-20   TRAVEL     Uber Technologies    $42.80
+2024-02-21   MEALS      Blue Bottle Coffee   $18.50
+--------------------------------------------------
+Total Claimed Amount:                            $61.30
+==================================================

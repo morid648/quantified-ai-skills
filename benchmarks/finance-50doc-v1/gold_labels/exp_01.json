@@ -1,0 +1,35 @@
+{
+  "doc_id": "exp_01",
+  "category": "expense_report",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "employee_name": "Sarah Jenkins",
+    "report_id": "EXP-2024-081",
+    "submission_date": "2024-02-14",
+    "total_amount": 950.7,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-02-10",
+        "category": "TRAVEL",
+        "merchant": "Delta Air Lines",
+        "amount": 485.2
+      },
+      {
+        "date": "2024-02-11",
+        "category": "LODGING",
+        "merchant": "Marriott Downtown",
+        "amount": 340.0
+      },
+      {
+        "date": "2024-02-12",
+        "category": "MEALS",
+        "merchant": "The Palm Steakhouse",
+        "amount": 125.5
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

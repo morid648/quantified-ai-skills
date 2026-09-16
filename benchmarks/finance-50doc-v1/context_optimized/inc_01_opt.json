@@ -1,0 +1,8 @@
+{
+  "doc_id": "inc_01",
+  "original_tokens": 174,
+  "optimized_tokens": 131,
+  "compression_ratio_pct": 24.71,
+  "information_retention_pct": 100.0,
+  "content": "STATEMENT OF OPERATIONS / INCOME\nCompany Name:   Northstar Logistics Corp\nFiscal Period:  Q1 2024\n--------------------------------------------------\nTotal Revenue:                   $1,250,000.00\nCost of Goods Sold (COGS):       $650,000.00\nGross Profit:                    $600,000.00\n--------------------------------------------------\nOperating Expenses (OpEx):       $380,000.00\nOperating Income:                $220,000.00\n--------------------------------------------------\nNet Income:                      $176,000.00"
+}

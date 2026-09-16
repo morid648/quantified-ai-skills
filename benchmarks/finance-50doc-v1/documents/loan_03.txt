@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Robert Taylor Sterling
+Identification Type:      TAX_ID
+ID Number:                XX-XXX7701
+--------------------------------------------------
+Stated Annual Income:     $220,000.00
+Requested Loan Amount:    $50,000.00
+Stated Purpose:           Working Capital Expansion
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

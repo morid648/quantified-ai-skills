@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  OmniTek Global Software
+Invoice No:   OTG-90211
+Invoice Date: 2024-03-25
+Payment Due Date: [NOT SPECIFIED / IMMEDIATE]
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Enterprise Core License O1 x (OCR Noise) 1.0    $5200.00     $5200.00  
+Add-on Analytics Module          2.0    $900.00      $1800.00  
+--------------------------------------------------
+Subtotal:                                       $7000.00
+Sales / Service Tax:                            $560.00
+Total Amount Due:                               $7560.00
+==================================================

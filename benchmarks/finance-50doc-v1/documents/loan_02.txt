@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Maria Luisa Gonzalez
+Identification Type:      PASSPORT
+ID Number:                P88319022
+--------------------------------------------------
+Stated Annual Income:     $92,000.00
+Requested Loan Amount:    $20,000.00
+Stated Purpose:           Home Improvement Remodel
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

@@ -1,0 +1,75 @@
+{
+  "doc_id": "inc_03",
+  "category": "income_statement",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "company_name": {
+      "extracted": "Apex Cloud Systems Inc",
+      "expected": "Apex Cloud Systems Inc",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "fiscal_period": {
+      "extracted": "Q4 2023",
+      "expected": "Q4 2023",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_revenue": {
+      "extracted": 2100000.0,
+      "expected": 2100000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "cost_of_goods_sold": {
+      "extracted": 720000.0,
+      "expected": 720000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "gross_profit": {
+      "extracted": 1380000.0,
+      "expected": 1380000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_expenses": {
+      "extracted": 890000.0,
+      "expected": 890000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_income": {
+      "extracted": 490000.0,
+      "expected": 490000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "net_income": {
+      "extracted": 392000.0,
+      "expected": 392000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

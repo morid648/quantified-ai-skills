@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Arthur Pendelton
+Report ID:        EXP-2024-089
+Submission Date:  2024-03-28
+Approval Status:  PENDING
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-24   LODGING    Boutique Hotel (Missing Receipt Note) $450.00
+2024-03-25   MEALS      Airport Cafe         $28.50
+--------------------------------------------------
+Total Claimed Amount:                            $478.50
+==================================================

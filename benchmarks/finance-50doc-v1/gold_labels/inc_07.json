@@ -1,0 +1,18 @@
+{
+  "doc_id": "inc_07",
+  "category": "income_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "company_name": "TerraEnergy Dynamics",
+    "fiscal_period": "Q4 2023",
+    "total_revenue": 4800000.0,
+    "cost_of_goods_sold": 3100000.0,
+    "gross_profit": 1700000.0,
+    "operating_expenses": 950000.0,
+    "operating_income": 750000.0,
+    "net_income": 600000.0
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

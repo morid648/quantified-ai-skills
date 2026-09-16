@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Elena Rostova
+Report ID:        EXP-2024-084
+Submission Date:  2024-03-02
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-02-27   LODGING    Hyatt Regency        $620.00
+2024-02-28   TRAVEL     United Airlines      $510.00
+--------------------------------------------------
+Total Claimed Amount:                            $1130.00
+==================================================

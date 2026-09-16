@@ -1,0 +1,15 @@
+==================================================
+        MONTHLY COMMERCIAL ACCOUNT STATEMENT      
+==================================================
+Financial Institution: Summit City Union Bank
+Account Number:        7710-9941-O8
+Statement Period:      2024-03-01 to 2024-03-31
+--------------------------------------------------
+Opening Balance:       $12500.00
+Closing Balance:       $8750.00
+--------------------------------------------------
+TRANSACTION LEDGER:
+Date         Description                Amount       Balance   
+2024-03-05   Merchant POS Batch         $4200.00     $16700.00 
+2024-03-19   Unrecognized International Fee -$7950.00    $8750.00  
+==================================================

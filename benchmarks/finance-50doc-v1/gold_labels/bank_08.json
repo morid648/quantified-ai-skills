@@ -1,0 +1,24 @@
+{
+  "doc_id": "bank_08",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "bank_name": "Pacific Merchant Bank",
+    "account_number": "1044-8839-01",
+    "statement_period_start": "2024-02-01",
+    "statement_period_end": "2024-02-29",
+    "opening_balance": 98600.0,
+    "closing_balance": 84200.0,
+    "transactions": [
+      {
+        "date": "2024-02-09",
+        "desc": "Software Tool Subscriptions",
+        "amount": -14400.0,
+        "balance": 84200.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

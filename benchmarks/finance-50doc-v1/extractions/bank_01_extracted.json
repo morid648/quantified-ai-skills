@@ -1,0 +1,45 @@
+{
+  "doc_id": "bank_01",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "in_tokens": 447,
+  "out_tokens": 133,
+  "latency_ms": 1200.03,
+  "extractions": {
+    "bank_name": "First Horizon Commercial Bank",
+    "account_number": "9820-4411-82",
+    "statement_period_start": "2024-01-01",
+    "statement_period_end": "2024-01-31",
+    "opening_balance": 45200.0,
+    "closing_balance": 58950.0,
+    "transactions": [
+      {
+        "date": "2024-01-05",
+        "desc": "Wire In: Alpha Ventures",
+        "amount": 25000.0,
+        "balance": 70200.0
+      },
+      {
+        "date": "2024-01-12",
+        "desc": "ACH Out: Payroll Services",
+        "amount": -8500.0,
+        "balance": 61700.0
+      },
+      {
+        "date": "2024-01-25",
+        "desc": "Debit: Cloud Infrastructure",
+        "amount": -2750.0,
+        "balance": 58950.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "bank_name": 0.98,
+    "account_number": 0.98,
+    "statement_period_start": 0.98,
+    "statement_period_end": 0.98,
+    "opening_balance": 0.98,
+    "closing_balance": 0.98,
+    "transactions": 0.96
+  }
+}

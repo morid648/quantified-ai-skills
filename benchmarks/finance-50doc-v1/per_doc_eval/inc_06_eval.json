@@ -1,0 +1,75 @@
+{
+  "doc_id": "inc_06",
+  "category": "income_statement",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "company_name": {
+      "extracted": "Silverline Consumer Products",
+      "expected": "Silverline Consumer Products",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "fiscal_period": {
+      "extracted": "Q1 2024",
+      "expected": "Q1 2024",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_revenue": {
+      "extracted": 950000.0,
+      "expected": 950000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "cost_of_goods_sold": {
+      "extracted": 580000.0,
+      "expected": 580000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "gross_profit": {
+      "extracted": 370000.0,
+      "expected": 370000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_expenses": {
+      "extracted": 260000.0,
+      "expected": 260000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_income": {
+      "extracted": 110000.0,
+      "expected": 110000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "net_income": {
+      "extracted": 88000.0,
+      "expected": 88000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

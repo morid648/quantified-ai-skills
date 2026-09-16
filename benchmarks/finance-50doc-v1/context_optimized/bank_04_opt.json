@@ -1,0 +1,8 @@
+{
+  "doc_id": "bank_04",
+  "original_tokens": 180,
+  "optimized_tokens": 137,
+  "compression_ratio_pct": 23.89,
+  "information_retention_pct": 100.0,
+  "content": "MONTHLY COMMERCIAL ACCOUNT STATEMENT\nFinancial Institution: Metro Commercial Bank\nAccount Number:        3391-7722-60\nStatement Period:      2024-02-01 to 2024-02-29\n--------------------------------------------------\nOpening Balance:       $76500.00\nClosing Balance:       $62100.00\n--------------------------------------------------\nTRANSACTION LEDGER:\nDate         Description                Amount       Balance\n2024-02-11   ACH: Commercial Lease Office -$12000.00   $64500.00\n2024-02-24   Corporate Credit Card Settlement -$2400.00    $62100.00"
+}

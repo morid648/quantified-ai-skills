@@ -1,0 +1,8 @@
+{
+  "doc_id": "bank_08",
+  "original_tokens": 163,
+  "optimized_tokens": 120,
+  "compression_ratio_pct": 26.38,
+  "information_retention_pct": 100.0,
+  "content": "MONTHLY COMMERCIAL ACCOUNT STATEMENT\nFinancial Institution: Pacific Merchant Bank\nAccount Number:        1044-8839-01\nStatement Period:      2024-02-01 to 2024-02-29\n--------------------------------------------------\nOpening Balance:       $98600.00\nClosing Balance:       $84200.00\n--------------------------------------------------\nTRANSACTION LEDGER:\nDate         Description                Amount       Balance\n2024-02-09   Software Tool Subscriptions -$14400.00   $84200.00"
+}

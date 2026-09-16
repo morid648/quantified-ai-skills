@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_06",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 416,
+  "out_tokens": 89,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "Jessica Miller",
+    "report_id": "EXP-2024-086",
+    "submission_date": "2024-03-12",
+    "total_amount": 209.1,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-03-08",
+        "category": "MEALS",
+        "merchant": "Pret A Manger",
+        "amount": 24.1
+      },
+      {
+        "date": "2024-03-09",
+        "category": "TRAVEL",
+        "merchant": "Amtrak Northeast",
+        "amount": 185.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

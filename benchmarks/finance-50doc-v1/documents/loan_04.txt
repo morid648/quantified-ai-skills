@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Amanda Claire Wright
+Identification Type:      SSN
+ID Number:                XXX-XX-1084
+--------------------------------------------------
+Stated Annual Income:     $115,000.00
+Requested Loan Amount:    $15,000.00
+Stated Purpose:           Vehicle Purchase
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

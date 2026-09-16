@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_10",
+  "category": "invoice",
+  "is_noisy": true,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "Acme Industrial Supplies",
+      "expected": "Acme Industrial Supplies",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "AIS-66100",
+      "expected": "AIS-66100",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-04-01",
+      "expected": "2024-04-01",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": "2024-05-01",
+      "expected": "2024-05-01",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "subtotal": {
+      "extracted": 3300.0,
+      "expected": 3300.0,
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 264.0,
+      "expected": 264.0,
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 3574.0,
+      "expected": 3574.0,
+      "matched": true,
+      "confidence": 0.65,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": true
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Packaging Crates Grade A",
+          "qty": 100.0,
+          "unit": 25.0,
+          "amt": 2500.0
+        },
+        {
+          "desc": "Industrial Strapping Rolls",
+          "qty": 10.0,
+          "unit": 80.0,
+          "amt": 800.0
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Packaging Crates Grade A",
+          "qty": 100.0,
+          "unit": 25.0,
+          "amt": 2500.0
+        },
+        {
+          "desc": "Industrial Strapping Rolls",
+          "qty": 10.0,
+          "unit": 80.0,
+          "amt": 800.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.85,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

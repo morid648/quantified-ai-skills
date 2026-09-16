@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QuantifiedSkillOutput",
+  "description": "Standard schema for machine-readable evaluation blocks emitted by quantified skills.",
+  "type": "object",
+  "required": [
+    "skill_name",
+    "version",
+    "timestamp",
+    "sample_size",
+    "status",
+    "metrics"
+  ],
+  "properties": {
+    "skill_name": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "The kebab-case identifier matching the skill folder."
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the skill or evaluation standard."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 formatted timestamp of run execution."
+    },
+    "sample_size": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of documents, samples, or items evaluated in this run."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pass", "fail", "warn"],
+      "description": "Overall outcome status based on target threshold."
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Numeric key-value pairs of metrics produced by the skill.",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "error_taxonomy": {
+      "type": "object",
+      "description": "Optional breakdown of error counts according to standard error classes.",
+      "properties": {
+        "correct": { "type": "integer", "minimum": 0 },
+        "missed_field": { "type": "integer", "minimum": 0 },
+        "wrong_value": { "type": "integer", "minimum": 0 },
+        "hallucinated_field": { "type": "integer", "minimum": 0 },
+        "low_confidence_correctly_flagged": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional arbitrary metadata regarding the evaluation context."
+    }
+  },
+  "additionalProperties": false
+}

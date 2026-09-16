@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Jessica Miller
+Report ID:        EXP-2024-086
+Submission Date:  2024-03-12
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-08   MEALS      Pret A Manger        $24.10
+2024-03-09   TRAVEL     Amtrak Northeast     $185.00
+--------------------------------------------------
+Total Claimed Amount:                            $209.10
+==================================================

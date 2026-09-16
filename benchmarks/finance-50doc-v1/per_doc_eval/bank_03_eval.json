@@ -1,0 +1,93 @@
+{
+  "doc_id": "bank_03",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "fields_total": 7,
+  "fields_correct": 7,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "bank_name": {
+      "extracted": "Beacon Trust & Savings",
+      "expected": "Beacon Trust & Savings",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "account_number": {
+      "extracted": "5501-2299-43",
+      "expected": "5501-2299-43",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "statement_period_start": {
+      "extracted": "2024-02-01",
+      "expected": "2024-02-01",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "statement_period_end": {
+      "extracted": "2024-02-29",
+      "expected": "2024-02-29",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "opening_balance": {
+      "extracted": 28400.0,
+      "expected": 28400.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "closing_balance": {
+      "extracted": 44150.0,
+      "expected": 44150.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "transactions": {
+      "extracted": [
+        {
+          "date": "2024-02-04",
+          "desc": "Deposit: POS Terminal Settlement",
+          "amount": 19250.0,
+          "balance": 47650.0
+        },
+        {
+          "date": "2024-02-18",
+          "desc": "Utility Bill Autopay",
+          "amount": -3500.0,
+          "balance": 44150.0
+        }
+      ],
+      "expected": [
+        {
+          "date": "2024-02-04",
+          "desc": "Deposit: POS Terminal Settlement",
+          "amount": 19250.0,
+          "balance": 47650.0
+        },
+        {
+          "date": "2024-02-18",
+          "desc": "Utility Bill Autopay",
+          "amount": -3500.0,
+          "balance": 44150.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

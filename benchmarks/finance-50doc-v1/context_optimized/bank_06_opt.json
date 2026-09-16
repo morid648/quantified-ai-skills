@@ -1,0 +1,8 @@
+{
+  "doc_id": "bank_06",
+  "original_tokens": 180,
+  "optimized_tokens": 137,
+  "compression_ratio_pct": 23.89,
+  "information_retention_pct": 100.0,
+  "content": "MONTHLY COMMERCIAL ACCOUNT STATEMENT\nFinancial Institution: Liberty Business Banking\nAccount Number:        8812-4409-12\nStatement Period:      2024-03-01 to 2024-03-31\n--------------------------------------------------\nOpening Balance:       $33100.00\nClosing Balance:       $29800.00\n--------------------------------------------------\nTRANSACTION LEDGER:\nDate         Description                Amount       Balance\n2024-03-10   Office Supplies Direct Debit -$4500.00    $28600.00\n2024-03-28   Interest Earned            $1200.00     $29800.00"
+}

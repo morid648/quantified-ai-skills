@@ -1,0 +1,10 @@
+{
+  "skill_name": "annotation-qa-scoring",
+  "double_annotated_doc_count": 10,
+  "total_fields_compared": 72,
+  "agreed_fields_count": 70,
+  "observed_agreement_pct": 97.22,
+  "expected_agreement_pct": 70.6,
+  "cohens_kappa": 0.9055,
+  "agreement_tier": "Almost Perfect"
+}

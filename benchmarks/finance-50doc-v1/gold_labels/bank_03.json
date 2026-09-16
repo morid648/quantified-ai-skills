@@ -1,0 +1,30 @@
+{
+  "doc_id": "bank_03",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "bank_name": "Beacon Trust & Savings",
+    "account_number": "5501-2299-43",
+    "statement_period_start": "2024-02-01",
+    "statement_period_end": "2024-02-29",
+    "opening_balance": 28400.0,
+    "closing_balance": 44150.0,
+    "transactions": [
+      {
+        "date": "2024-02-04",
+        "desc": "Deposit: POS Terminal Settlement",
+        "amount": 19250.0,
+        "balance": 47650.0
+      },
+      {
+        "date": "2024-02-18",
+        "desc": "Utility Bill Autopay",
+        "amount": -3500.0,
+        "balance": 44150.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

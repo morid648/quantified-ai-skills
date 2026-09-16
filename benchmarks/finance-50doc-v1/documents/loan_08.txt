@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Sunita Lakshmi Rao
+Identification Type:      PASSPORT
+ID Number:                Z10948201
+--------------------------------------------------
+Stated Annual Income:     $130,000.00
+Requested Loan Amount:    $25,000.00
+Stated Purpose:           Higher Education Tuition
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

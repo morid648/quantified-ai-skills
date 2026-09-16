@@ -1,0 +1,30 @@
+{
+  "doc_id": "exp_05",
+  "category": "expense_report",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "employee_name": "Marcus Vance",
+    "report_id": "EXP-2024-085",
+    "submission_date": "2024-03-05",
+    "total_amount": 600.0,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-03-01",
+        "category": "SOFTWARE",
+        "merchant": "GitHub Enterprise",
+        "amount": 420.0
+      },
+      {
+        "date": "2024-03-02",
+        "category": "SOFTWARE",
+        "merchant": "Figma Professional",
+        "amount": 180.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [],
+  "annotator_id": "annotator_pass_2"
+}

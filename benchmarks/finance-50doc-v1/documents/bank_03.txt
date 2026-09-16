@@ -1,0 +1,15 @@
+==================================================
+        MONTHLY COMMERCIAL ACCOUNT STATEMENT      
+==================================================
+Financial Institution: Beacon Trust & Savings
+Account Number:        5501-2299-43
+Statement Period:      2024-02-01 to 2024-02-29
+--------------------------------------------------
+Opening Balance:       $28400.00
+Closing Balance:       $44150.00
+--------------------------------------------------
+TRANSACTION LEDGER:
+Date         Description                Amount       Balance   
+2024-02-04   Deposit: POS Terminal Settlement $19250.00    $47650.00 
+2024-02-18   Utility Bill Autopay       -$3500.00    $44150.00 
+==================================================

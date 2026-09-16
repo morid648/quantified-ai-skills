@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_07",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 415,
+  "out_tokens": 92,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "Rajesh Patel",
+    "report_id": "EXP-2024-087",
+    "submission_date": "2024-03-18",
+    "total_amount": 183.8,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-03-14",
+        "category": "SUPPLIES",
+        "merchant": "Staples Office Store",
+        "amount": 145.2
+      },
+      {
+        "date": "2024-03-15",
+        "category": "TRAVEL",
+        "merchant": "Lyft Transportation",
+        "amount": 38.6
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

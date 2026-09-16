@@ -1,0 +1,75 @@
+{
+  "doc_id": "inc_07",
+  "category": "income_statement",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "company_name": {
+      "extracted": "TerraEnergy Dynamics",
+      "expected": "TerraEnergy Dynamics",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "fiscal_period": {
+      "extracted": "Q4 2023",
+      "expected": "Q4 2023",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_revenue": {
+      "extracted": 4800000.0,
+      "expected": 4800000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "cost_of_goods_sold": {
+      "extracted": 3100000.0,
+      "expected": 3100000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "gross_profit": {
+      "extracted": 1700000.0,
+      "expected": 1700000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_expenses": {
+      "extracted": 950000.0,
+      "expected": 950000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_income": {
+      "extracted": 750000.0,
+      "expected": 750000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "net_income": {
+      "extracted": 600000.0,
+      "expected": 600000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

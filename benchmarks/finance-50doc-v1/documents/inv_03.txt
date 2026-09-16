@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Crestview Strategic Consulting
+Invoice No:   CSC-9904
+Invoice Date: 2024-02-01
+Payment Due Date: 2024-03-01
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Q1 Market Expansion Feasibility Study 40.0   $275.00      $11000.00 
+Competitive Intelligence Dossier 1.0    $3500.00     $3500.00  
+--------------------------------------------------
+Subtotal:                                       $14500.00
+Sales / Service Tax:                            $0.00
+Total Amount Due:                               $14500.00
+==================================================

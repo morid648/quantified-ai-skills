@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-02-08T00:00:00.000Z",
+  "bundles": {
+    "core-dev": {
+      "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
+      "skills": []
+    },
+    "security-core": {
+      "description": "Security, privacy, and compliance essentials.",
+      "skills": []
+    },
+    "k8s-core": {
+      "description": "Kubernetes and service mesh essentials.",
+      "skills": []
+    },
+    "data-core": {
+      "description": "Data engineering and analytics foundations.",
+      "skills": [
+        "quantified-eval-orchestrator",
+        "training-data-quality-scorer"
+      ]
+    },
+    "ops-core": {
+      "description": "Operations, observability, and delivery pipelines.",
+      "skills": []
+    },
+    "ai-training-eval": {
+      "description": "AI training data quality, evaluation harnesses, and regression tracking.",
+      "skills": [
+        "eval-harness-builder",
+        "regression-benchmark-tracker",
+        "training-data-quality-scorer"
+      ]
+    },
+    "context-optimization": {
+      "description": "Document chunking and context budget allocation for long-document LLM pipelines.",
+      "skills": [
+        "context-budget-allocator",
+        "document-context-chunking"
+      ]
+    },
+    "prompt-engineering": {
+      "description": "Prompt scorecard testing and finance-domain extraction prompt libraries.",
+      "skills": [
+        "extraction-prompt-library-finance",
+        "prompt-scorecard-testing"
+      ]
+    },
+    "ai-annotation": {
+      "description": "Annotation guideline writing, QA scoring, and finance document annotation.",
+      "skills": [
+        "annotation-guideline-writer",
+        "annotation-qa-scoring",
+        "finance-document-annotator"
+      ]
+    },
+    "quantified-eval-suite": {
+      "description": "The complete 11-skill unified pipeline orchestrator.",
+      "skills": [
+        "quantified-eval-orchestrator"
+      ]
+    }
+  },
+  "common": []
+}

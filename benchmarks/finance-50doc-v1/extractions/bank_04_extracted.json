@@ -1,0 +1,39 @@
+{
+  "doc_id": "bank_04",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "in_tokens": 430,
+  "out_tokens": 109,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "bank_name": "Metro Commercial Bank",
+    "account_number": "3391-7722-60",
+    "statement_period_start": "2024-02-01",
+    "statement_period_end": "2024-02-29",
+    "opening_balance": 76500.0,
+    "closing_balance": 62100.0,
+    "transactions": [
+      {
+        "date": "2024-02-11",
+        "desc": "ACH: Commercial Lease Office",
+        "amount": -12000.0,
+        "balance": 64500.0
+      },
+      {
+        "date": "2024-02-24",
+        "desc": "Corporate Credit Card Settlement",
+        "amount": -2400.0,
+        "balance": 62100.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "bank_name": 0.98,
+    "account_number": 0.98,
+    "statement_period_start": 0.98,
+    "statement_period_end": 0.98,
+    "opening_balance": 0.98,
+    "closing_balance": 0.98,
+    "transactions": 0.96
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_09",
+  "category": "invoice",
+  "is_noisy": true,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "OmniTek Global Software",
+      "expected": "OmniTek Global Software",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "OTG-90211",
+      "expected": "OTG-90211",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-03-25",
+      "expected": "2024-03-25",
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": null,
+      "expected": null,
+      "matched": true,
+      "confidence": 0.5,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": true
+    },
+    "subtotal": {
+      "extracted": 7000.0,
+      "expected": 7000.0,
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 560.0,
+      "expected": 560.0,
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 7560.0,
+      "expected": 7560.0,
+      "matched": true,
+      "confidence": 0.82,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Enterprise Core License O1 x (OCR Noise)",
+          "qty": 1.0,
+          "unit": 5200.0,
+          "amt": 5200.0
+        },
+        {
+          "desc": "Add-on Analytics Module",
+          "qty": 2.0,
+          "unit": 900.0,
+          "amt": 1800.0
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Enterprise Core License O1 x (OCR Noise)",
+          "qty": 1.0,
+          "unit": 5200.0,
+          "amt": 5200.0
+        },
+        {
+          "desc": "Add-on Analytics Module",
+          "qty": 2.0,
+          "unit": 900.0,
+          "amt": 1800.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.85,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

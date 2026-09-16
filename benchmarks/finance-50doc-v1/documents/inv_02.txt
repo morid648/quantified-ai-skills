@@ -1,0 +1,17 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Meridian Office Solutions LLC
+Invoice No:   MOS-88219
+Invoice Date: 2024-01-22
+Payment Due Date: 2024-02-22
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Ergonomic Mesh Task Chairs       8.0    $350.00      $2800.00  
+Motorized Sit-Stand Desks        4.0    $650.00      $2600.00  
+--------------------------------------------------
+Subtotal:                                       $5400.00
+Sales / Service Tax:                            $432.00
+Total Amount Due:                               $5832.00
+==================================================

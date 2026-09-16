@@ -1,0 +1,8 @@
+{
+  "doc_id": "inc_10",
+  "original_tokens": 173,
+  "optimized_tokens": 130,
+  "compression_ratio_pct": 24.86,
+  "information_retention_pct": 100.0,
+  "content": "STATEMENT OF OPERATIONS / INCOME\nCompany Name:   Delta Robotics Lab\nFiscal Period:  Q1 2024\n--------------------------------------------------\nTotal Revenue:                   $2,200,000.00\nCost of Goods Sold (COGS):       $980,000.00\nGross Profit:                    $1,220,000.00\n--------------------------------------------------\nOperating Expenses (OpEx):       $750,000.00\nOperating Income:                $470,000.00\n--------------------------------------------------\nNet Income:                      $371,000.00"
+}

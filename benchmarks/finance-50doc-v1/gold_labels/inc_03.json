@@ -1,0 +1,18 @@
+{
+  "doc_id": "inc_03",
+  "category": "income_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "company_name": "Apex Cloud Systems Inc",
+    "fiscal_period": "Q4 2023",
+    "total_revenue": 2100000.0,
+    "cost_of_goods_sold": 720000.0,
+    "gross_profit": 1380000.0,
+    "operating_expenses": 890000.0,
+    "operating_income": 490000.0,
+    "net_income": 392000.0
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

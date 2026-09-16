@@ -1,0 +1,8 @@
+{
+  "doc_id": "bank_02",
+  "original_tokens": 179,
+  "optimized_tokens": 136,
+  "compression_ratio_pct": 24.02,
+  "information_retention_pct": 100.0,
+  "content": "MONTHLY COMMERCIAL ACCOUNT STATEMENT\nFinancial Institution: Pacific Merchant Bank\nAccount Number:        1044-8839-01\nStatement Period:      2024-01-01 to 2024-01-31\n--------------------------------------------------\nOpening Balance:       $112400.00\nClosing Balance:       $98600.00\n--------------------------------------------------\nTRANSACTION LEDGER:\nDate         Description                Amount       Balance\n2024-01-08   Vendor Pmt: Apex Systems   -$18800.00   $93600.00\n2024-01-20   Client Retainer: Acme Corp $5000.00     $98600.00"
+}

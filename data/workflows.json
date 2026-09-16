@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-09-15T21:30:00.000Z",
+  "version": 2,
+  "workflows": [
+    {
+      "id": "financial-document-extraction-eval",
+      "name": "Financial Document Extraction & Benchmarking Pipeline",
+      "description": "End-to-end pipeline to preprocess, chunk, allocate budgets, extract structured data, and benchmark against gold standards with automated regression tracking.",
+      "category": "finance-ai",
+      "relatedBundles": [
+        "ai-training-eval",
+        "context-optimization",
+        "prompt-engineering",
+        "ai-annotation"
+      ],
+      "steps": [
+        {
+          "title": "Document Chunking & Context Allocation",
+          "goal": "Chunk financial records into semantic sections and allocate token budget while maintaining 100% factual retention.",
+          "recommendedSkills": [
+            "document-context-chunking",
+            "context-budget-allocator"
+          ],
+          "notes": "Ensures document fits LLM context window without truncating key financial tables."
+        },
+        {
+          "title": "Extraction Prompt Execution",
+          "goal": "Apply zero-shot financial extraction prompts with strict schema validation.",
+          "recommendedSkills": [
+            "extraction-prompt-library-finance",
+            "prompt-scorecard-testing"
+          ],
+          "notes": "Applies dual-track extraction with confidence flags for mathematical discrepancies."
+        },
+        {
+          "title": "Annotation QA & Ground Truth Validation",
+          "goal": "Measure inter-annotator agreement (Cohen's Kappa) and validate gold labels.",
+          "recommendedSkills": [
+            "annotation-guideline-writer",
+            "annotation-qa-scoring",
+            "finance-document-annotator"
+          ],
+          "notes": "Guarantees high-fidelity ground truth for scoring."
+        },
+        {
+          "title": "Evaluation Harness & Regression Tracking",
+          "goal": "Score model predictions against gold labels and detect any regression against baseline metrics.",
+          "recommendedSkills": [
+            "eval-harness-builder",
+            "regression-benchmark-tracker",
+            "training-data-quality-scorer",
+            "quantified-eval-orchestrator"
+          ],
+          "notes": "Generates complete precision/recall/F1 breakdowns and cost/latency telemetry."
+        }
+      ]
+    }
+  ]
+}

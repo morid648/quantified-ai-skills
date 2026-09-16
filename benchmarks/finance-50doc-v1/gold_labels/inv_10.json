@@ -1,0 +1,35 @@
+{
+  "doc_id": "inv_10",
+  "category": "invoice",
+  "is_noisy": true,
+  "injected_flaws": [
+    "arithmetic_total_discrepancy"
+  ],
+  "fields": {
+    "vendor_name": "Acme Industrial Supplies",
+    "invoice_number": "AIS-66100",
+    "invoice_date": "2024-04-01",
+    "due_date": "2024-05-01",
+    "subtotal": 3300.0,
+    "tax_amount": 264.0,
+    "total_amount": 3574.0,
+    "line_items": [
+      {
+        "desc": "Packaging Crates Grade A",
+        "qty": 100.0,
+        "unit": 25.0,
+        "amt": 2500.0
+      },
+      {
+        "desc": "Industrial Strapping Rolls",
+        "qty": 10.0,
+        "unit": 80.0,
+        "amt": 800.0
+      }
+    ]
+  },
+  "self_consistency_passed": false,
+  "risk_flags": [
+    "arithmetic_total_discrepancy"
+  ]
+}

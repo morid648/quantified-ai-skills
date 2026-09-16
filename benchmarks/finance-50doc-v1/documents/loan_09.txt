@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Bradley Thomas Thorne
+Identification Type:      SSN
+ID Number:                XXX-XX-8831
+--------------------------------------------------
+Stated Annual Income:     $45,000.00
+Requested Loan Amount:    $350,000.00
+Stated Purpose:           Speculative Real Estate
+--------------------------------------------------
+Underwriter Risk Flags:   DEBT_TO_INCOME_HIGH, SPECULATIVE_PURPOSE_FLAG
+==================================================

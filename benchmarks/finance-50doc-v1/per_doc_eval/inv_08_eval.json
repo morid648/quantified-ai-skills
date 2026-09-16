@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_08",
+  "category": "invoice",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "Pinnacle Facilities Management",
+      "expected": "Pinnacle Facilities Management",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "PFM-11082",
+      "expected": "PFM-11082",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-03-20",
+      "expected": "2024-03-20",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": "2024-04-20",
+      "expected": "2024-04-20",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "subtotal": {
+      "extracted": 3250.0,
+      "expected": 3250.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 260.0,
+      "expected": 260.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 3510.0,
+      "expected": 3510.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Monthly Commercial Janitorial Service",
+          "qty": 1.0,
+          "unit": 2400.0,
+          "amt": 2400.0
+        },
+        {
+          "desc": "HVAC Filter Replacement & Inspection",
+          "qty": 1.0,
+          "unit": 850.0,
+          "amt": 850.0
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Monthly Commercial Janitorial Service",
+          "qty": 1.0,
+          "unit": 2400.0,
+          "amt": 2400.0
+        },
+        {
+          "desc": "HVAC Filter Replacement & Inspection",
+          "qty": 1.0,
+          "unit": 850.0,
+          "amt": 850.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

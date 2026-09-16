@@ -1,0 +1,34 @@
+{
+  "doc_id": "bank_09",
+  "category": "bank_statement",
+  "is_noisy": true,
+  "injected_flaws": [
+    "ocr_char_in_account_number"
+  ],
+  "fields": {
+    "bank_name": "Summit City Union Bank",
+    "account_number": "7710-9941-O8",
+    "statement_period_start": "2024-03-01",
+    "statement_period_end": "2024-03-31",
+    "opening_balance": 12500.0,
+    "closing_balance": 8750.0,
+    "transactions": [
+      {
+        "date": "2024-03-05",
+        "desc": "Merchant POS Batch",
+        "amount": 4200.0,
+        "balance": 16700.0
+      },
+      {
+        "date": "2024-03-19",
+        "desc": "Unrecognized International Fee",
+        "amount": -7950.0,
+        "balance": 8750.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [
+    "ocr_char_in_account_number"
+  ]
+}

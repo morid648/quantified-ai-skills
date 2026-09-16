@@ -1,0 +1,39 @@
+{
+  "doc_id": "bank_07",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "in_tokens": 431,
+  "out_tokens": 109,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "bank_name": "First Horizon Commercial Bank",
+    "account_number": "9820-4411-82",
+    "statement_period_start": "2024-02-01",
+    "statement_period_end": "2024-02-29",
+    "opening_balance": 58950.0,
+    "closing_balance": 71450.0,
+    "transactions": [
+      {
+        "date": "2024-02-14",
+        "desc": "Client Invoice Collection",
+        "amount": 21000.0,
+        "balance": 79950.0
+      },
+      {
+        "date": "2024-02-28",
+        "desc": "ACH Out: Healthcare Benefits",
+        "amount": -8500.0,
+        "balance": 71450.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "bank_name": 0.98,
+    "account_number": 0.98,
+    "statement_period_start": 0.98,
+    "statement_period_end": 0.98,
+    "opening_balance": 0.98,
+    "closing_balance": 0.98,
+    "transactions": 0.96
+  }
+}

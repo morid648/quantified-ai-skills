@@ -1,0 +1,17 @@
+{
+  "doc_id": "loan_04",
+  "category": "loan_application",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "applicant_name": "Amanda Claire Wright",
+    "id_type": "SSN",
+    "id_number": "XXX-XX-1084",
+    "annual_income": 115000.0,
+    "requested_amount": 15000.0,
+    "loan_purpose": "Vehicle Purchase",
+    "risk_flags": []
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

@@ -1,0 +1,75 @@
+{
+  "doc_id": "inc_01",
+  "category": "income_statement",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "company_name": {
+      "extracted": "Northstar Logistics Corp",
+      "expected": "Northstar Logistics Corp",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "fiscal_period": {
+      "extracted": "Q1 2024",
+      "expected": "Q1 2024",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_revenue": {
+      "extracted": 1250000.0,
+      "expected": 1250000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "cost_of_goods_sold": {
+      "extracted": 650000.0,
+      "expected": 650000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "gross_profit": {
+      "extracted": 600000.0,
+      "expected": 600000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_expenses": {
+      "extracted": 380000.0,
+      "expected": 380000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "operating_income": {
+      "extracted": 220000.0,
+      "expected": 220000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "net_income": {
+      "extracted": 176000.0,
+      "expected": 176000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

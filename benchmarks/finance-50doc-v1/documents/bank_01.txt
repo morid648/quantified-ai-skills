@@ -1,0 +1,16 @@
+==================================================
+        MONTHLY COMMERCIAL ACCOUNT STATEMENT      
+==================================================
+Financial Institution: First Horizon Commercial Bank
+Account Number:        9820-4411-82
+Statement Period:      2024-01-01 to 2024-01-31
+--------------------------------------------------
+Opening Balance:       $45200.00
+Closing Balance:       $58950.00
+--------------------------------------------------
+TRANSACTION LEDGER:
+Date         Description                Amount       Balance   
+2024-01-05   Wire In: Alpha Ventures    $25000.00    $70200.00 
+2024-01-12   ACH Out: Payroll Services  -$8500.00    $61700.00 
+2024-01-25   Debit: Cloud Infrastructure -$2750.00    $58950.00 
+==================================================

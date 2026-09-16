@@ -1,0 +1,93 @@
+{
+  "doc_id": "bank_02",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "fields_total": 7,
+  "fields_correct": 7,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "bank_name": {
+      "extracted": "Pacific Merchant Bank",
+      "expected": "Pacific Merchant Bank",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "account_number": {
+      "extracted": "1044-8839-01",
+      "expected": "1044-8839-01",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "statement_period_start": {
+      "extracted": "2024-01-01",
+      "expected": "2024-01-01",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "statement_period_end": {
+      "extracted": "2024-01-31",
+      "expected": "2024-01-31",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "opening_balance": {
+      "extracted": 112400.0,
+      "expected": 112400.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "closing_balance": {
+      "extracted": 98600.0,
+      "expected": 98600.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "transactions": {
+      "extracted": [
+        {
+          "date": "2024-01-08",
+          "desc": "Vendor Pmt: Apex Systems",
+          "amount": -18800.0,
+          "balance": 93600.0
+        },
+        {
+          "date": "2024-01-20",
+          "desc": "Client Retainer: Acme Corp",
+          "amount": 5000.0,
+          "balance": 98600.0
+        }
+      ],
+      "expected": [
+        {
+          "date": "2024-01-08",
+          "desc": "Vendor Pmt: Apex Systems",
+          "amount": -18800.0,
+          "balance": 93600.0
+        },
+        {
+          "date": "2024-01-20",
+          "desc": "Client Retainer: Acme Corp",
+          "amount": 5000.0,
+          "balance": 98600.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

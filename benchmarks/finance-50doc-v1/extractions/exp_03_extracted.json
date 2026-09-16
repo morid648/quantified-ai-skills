@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_03",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 415,
+  "out_tokens": 89,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "David Rossi",
+    "report_id": "EXP-2024-083",
+    "submission_date": "2024-02-25",
+    "total_amount": 61.3,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-02-20",
+        "category": "TRAVEL",
+        "merchant": "Uber Technologies",
+        "amount": 42.8
+      },
+      {
+        "date": "2024-02-21",
+        "category": "MEALS",
+        "merchant": "Blue Bottle Coffee",
+        "amount": 18.5
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_08",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 416,
+  "out_tokens": 92,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "Hannah Abbott",
+    "report_id": "EXP-2024-088",
+    "submission_date": "2024-03-22",
+    "total_amount": 306.75,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-03-19",
+        "category": "LODGING",
+        "merchant": "Hilton Garden Inn",
+        "amount": 290.0
+      },
+      {
+        "date": "2024-03-20",
+        "category": "MEALS",
+        "merchant": "Chipotle Mexican Grill",
+        "amount": 16.75
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

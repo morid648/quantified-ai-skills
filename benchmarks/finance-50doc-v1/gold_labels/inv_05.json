@@ -1,0 +1,31 @@
+{
+  "doc_id": "inv_05",
+  "category": "invoice",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "vendor_name": "Hyperion Cybersecurity Corp",
+    "invoice_number": "HYP-2024-501",
+    "invoice_date": "2024-02-18",
+    "due_date": "2024-03-20",
+    "subtotal": 24500.0,
+    "tax_amount": 1960.0,
+    "total_amount": 26460.0,
+    "line_items": [
+      {
+        "desc": "Penetration Testing & Red Team Audit",
+        "qty": 1.0,
+        "unit": 16000.0,
+        "amt": 16000.0
+      },
+      {
+        "desc": "SOC-2 Type II Compliance Readiness",
+        "qty": 1.0,
+        "unit": 8500.0,
+        "amt": 8500.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

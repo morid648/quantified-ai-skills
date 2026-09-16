@@ -1,0 +1,41 @@
+{
+  "doc_id": "inv_08",
+  "category": "invoice",
+  "is_noisy": false,
+  "in_tokens": 453,
+  "out_tokens": 101,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "vendor_name": "Pinnacle Facilities Management",
+    "invoice_number": "PFM-11082",
+    "invoice_date": "2024-03-20",
+    "due_date": "2024-04-20",
+    "subtotal": 3250.0,
+    "tax_amount": 260.0,
+    "total_amount": 3510.0,
+    "line_items": [
+      {
+        "desc": "Monthly Commercial Janitorial Service",
+        "qty": 1.0,
+        "unit": 2400.0,
+        "amt": 2400.0
+      },
+      {
+        "desc": "HVAC Filter Replacement & Inspection",
+        "qty": 1.0,
+        "unit": 850.0,
+        "amt": 850.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "vendor_name": 0.98,
+    "invoice_number": 0.98,
+    "invoice_date": 0.98,
+    "due_date": 0.98,
+    "subtotal": 0.98,
+    "tax_amount": 0.98,
+    "total_amount": 0.98,
+    "line_items": 0.96
+  }
+}

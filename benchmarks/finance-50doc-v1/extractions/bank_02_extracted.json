@@ -1,0 +1,39 @@
+{
+  "doc_id": "bank_02",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "in_tokens": 429,
+  "out_tokens": 107,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "bank_name": "Pacific Merchant Bank",
+    "account_number": "1044-8839-01",
+    "statement_period_start": "2024-01-01",
+    "statement_period_end": "2024-01-31",
+    "opening_balance": 112400.0,
+    "closing_balance": 98600.0,
+    "transactions": [
+      {
+        "date": "2024-01-08",
+        "desc": "Vendor Pmt: Apex Systems",
+        "amount": -18800.0,
+        "balance": 93600.0
+      },
+      {
+        "date": "2024-01-20",
+        "desc": "Client Retainer: Acme Corp",
+        "amount": 5000.0,
+        "balance": 98600.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "bank_name": 0.98,
+    "account_number": 0.98,
+    "statement_period_start": 0.98,
+    "statement_period_end": 0.98,
+    "opening_balance": 0.98,
+    "closing_balance": 0.98,
+    "transactions": 0.96
+  }
+}

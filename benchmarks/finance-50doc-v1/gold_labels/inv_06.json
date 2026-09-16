@@ -1,0 +1,31 @@
+{
+  "doc_id": "inv_06",
+  "category": "invoice",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "vendor_name": "Vanguard Hardware Distribution",
+    "invoice_number": "VHD-77301",
+    "invoice_date": "2024-03-02",
+    "due_date": "2024-04-02",
+    "subtotal": 13800.0,
+    "tax_amount": 1104.0,
+    "total_amount": 14904.0,
+    "line_items": [
+      {
+        "desc": "Rackmount Server Nodes 1U",
+        "qty": 3.0,
+        "unit": 3200.0,
+        "amt": 9600.0
+      },
+      {
+        "desc": "100GbE Managed Switch",
+        "qty": 1.0,
+        "unit": 4200.0,
+        "amt": 4200.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

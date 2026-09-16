@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Hannah Abbott
+Report ID:        EXP-2024-088
+Submission Date:  2024-03-22
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-19   LODGING    Hilton Garden Inn    $290.00
+2024-03-20   MEALS      Chipotle Mexican Grill $16.75
+--------------------------------------------------
+Total Claimed Amount:                            $306.75
+==================================================

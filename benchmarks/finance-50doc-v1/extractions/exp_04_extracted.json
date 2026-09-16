@@ -1,0 +1,37 @@
+{
+  "doc_id": "exp_04",
+  "category": "expense_report",
+  "is_noisy": false,
+  "in_tokens": 416,
+  "out_tokens": 90,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "employee_name": "Elena Rostova",
+    "report_id": "EXP-2024-084",
+    "submission_date": "2024-03-02",
+    "total_amount": 1130.0,
+    "approval_status": "APPROVED",
+    "expense_items": [
+      {
+        "date": "2024-02-27",
+        "category": "LODGING",
+        "merchant": "Hyatt Regency",
+        "amount": 620.0
+      },
+      {
+        "date": "2024-02-28",
+        "category": "TRAVEL",
+        "merchant": "United Airlines",
+        "amount": 510.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "employee_name": 0.98,
+    "report_id": 0.98,
+    "submission_date": 0.98,
+    "total_amount": 0.98,
+    "approval_status": 0.98,
+    "expense_items": 0.96
+  }
+}

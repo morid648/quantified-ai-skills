@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Rajesh Patel
+Report ID:        EXP-2024-087
+Submission Date:  2024-03-18
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-03-14   SUPPLIES   Staples Office Store $145.20
+2024-03-15   TRAVEL     Lyft Transportation  $38.60
+--------------------------------------------------
+Total Claimed Amount:                            $183.80
+==================================================

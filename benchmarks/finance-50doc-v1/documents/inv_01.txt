@@ -1,0 +1,18 @@
+==================================================
+               COMMERCIAL INVOICE                 
+==================================================
+Vendor Name:  Apex Cloud Systems Inc
+Invoice No:   INV-2024-1001
+Invoice Date: 2024-01-15
+Payment Due Date: 2024-02-15
+--------------------------------------------------
+LINE ITEMS:
+Description                      Qty    Unit Price   Amount    
+Kubernetes Cluster Hosting       1.0    $4500.00     $4500.00  
+High-Throughput Storage (TB)     10.0   $120.00      $1200.00  
+24/7 SRE Enterprise SLA          1.0    $1800.00     $1800.00  
+--------------------------------------------------
+Subtotal:                                       $7500.00
+Sales / Service Tax:                            $600.00
+Total Amount Due:                               $8100.00
+==================================================

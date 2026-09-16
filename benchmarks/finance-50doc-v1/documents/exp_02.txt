@@ -1,0 +1,15 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Michael Chang
+Report ID:        EXP-2024-082
+Submission Date:  2024-02-18
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-02-15   SOFTWARE   JetBrains License    $249.00
+2024-02-16   SUPPLIES   Amazon Business      $78.40
+--------------------------------------------------
+Total Claimed Amount:                            $327.40
+==================================================

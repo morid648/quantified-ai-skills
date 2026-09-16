@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_04",
+  "category": "invoice",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "Summit Logistics & Freight",
+      "expected": "Summit Logistics & Freight",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "SLF-44102",
+      "expected": "SLF-44102",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-02-10",
+      "expected": "2024-02-10",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": "2024-02-25",
+      "expected": "2024-02-25",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "subtotal": {
+      "extracted": 4120.5,
+      "expected": 4120.5,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 206.03,
+      "expected": 206.03,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 4326.53,
+      "expected": 4326.53,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Interstate Freight Transit - 2 TEU",
+          "qty": 2.0,
+          "unit": 1850.0,
+          "amt": 3700.0
+        },
+        {
+          "desc": "Fuel Surcharge",
+          "qty": 1.0,
+          "unit": 420.5,
+          "amt": 420.5
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Interstate Freight Transit - 2 TEU",
+          "qty": 2.0,
+          "unit": 1850.0,
+          "amt": 3700.0
+        },
+        {
+          "desc": "Fuel Surcharge",
+          "qty": 1.0,
+          "unit": 420.5,
+          "amt": 420.5
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

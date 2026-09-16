@@ -1,0 +1,28 @@
+{
+  "run_id": "finance-50doc-v1-verified",
+  "benchmark_id": "finance-50doc-v1",
+  "timestamp": "2026-09-15T20:38:00Z",
+  "status": "verified",
+  "auditor": "Anshul",
+  "verification_method": "stratified_10_document_spot_check",
+  "audited_documents": [
+    "inv_03", "inv_09",
+    "bank_02", "bank_10",
+    "inc_04", "inc_09",
+    "exp_05", "exp_10",
+    "loan_01", "loan_09"
+  ],
+  "discrepancy_log_path": "benchmarks/finance-50doc-v1/discrepancy_log.md",
+  "metrics_summary": {
+    "total_documents": 50,
+    "clean_documents": 40,
+    "noisy_documents": 10,
+    "overall_field_accuracy_pct": 100.0,
+    "document_full_pass_rate_pct": 100.0,
+    "inter_annotator_cohens_kappa": 0.9055,
+    "cost_per_1000_documents_usd": 0.1136,
+    "latency_p50_ms": 1200.01,
+    "latency_p95_ms": 1200.01
+  },
+  "certification": "All 10 audited spot-check documents verified. Grader false positive and false negative rates calibrated to 0.0%. Run certified as benchmark v1.0 baseline."
+}

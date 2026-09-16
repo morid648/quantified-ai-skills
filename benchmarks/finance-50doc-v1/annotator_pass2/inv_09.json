@@ -1,0 +1,38 @@
+{
+  "doc_id": "inv_09",
+  "category": "invoice",
+  "is_noisy": true,
+  "injected_flaws": [
+    "missing_due_date",
+    "ocr_noise_in_line_item"
+  ],
+  "fields": {
+    "vendor_name": "OmniTek Global Software",
+    "invoice_number": "OTG-90211",
+    "invoice_date": "2024-03-25",
+    "due_date": null,
+    "subtotal": 7000.0,
+    "tax_amount": 560.0,
+    "total_amount": 7560.0,
+    "line_items": [
+      {
+        "desc": "Enterprise Core License O1 x",
+        "qty": 1.0,
+        "unit": 5200.0,
+        "amt": 5200.0
+      },
+      {
+        "desc": "Add-on Analytics Module",
+        "qty": 2.0,
+        "unit": 900.0,
+        "amt": 1800.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [
+    "missing_due_date",
+    "ocr_noise_in_line_item"
+  ],
+  "annotator_id": "annotator_pass_2"
+}

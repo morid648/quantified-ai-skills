@@ -1,0 +1,18 @@
+{
+  "doc_id": "inc_05",
+  "category": "income_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "company_name": "Zenith Financial Technologies",
+    "fiscal_period": "Q1 2024",
+    "total_revenue": 1820000.0,
+    "cost_of_goods_sold": 360000.0,
+    "gross_profit": 1460000.0,
+    "operating_expenses": 920000.0,
+    "operating_income": 540000.0,
+    "net_income": 432000.0
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

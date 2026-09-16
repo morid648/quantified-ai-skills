@@ -1,0 +1,16 @@
+==================================================
+           CORPORATE EXPENSE REPORT               
+==================================================
+Employee Name:    Sarah Jenkins
+Report ID:        EXP-2024-081
+Submission Date:  2024-02-14
+Approval Status:  APPROVED
+--------------------------------------------------
+ITEMIZED EXPENSES:
+Date         Category   Merchant             Amount    
+2024-02-10   TRAVEL     Delta Air Lines      $485.20
+2024-02-11   LODGING    Marriott Downtown    $340.00
+2024-02-12   MEALS      The Palm Steakhouse  $125.50
+--------------------------------------------------
+Total Claimed Amount:                            $950.70
+==================================================

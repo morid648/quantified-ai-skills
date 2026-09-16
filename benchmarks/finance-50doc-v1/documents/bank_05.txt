@@ -1,0 +1,15 @@
+==================================================
+        MONTHLY COMMERCIAL ACCOUNT STATEMENT      
+==================================================
+Financial Institution: Keystone National Bank
+Account Number:        4490-1120-77
+Statement Period:      2024-03-01 to 2024-03-31
+--------------------------------------------------
+Opening Balance:       $154000.00
+Closing Balance:       $178200.00
+--------------------------------------------------
+TRANSACTION LEDGER:
+Date         Description                Amount       Balance   
+2024-03-07   Wire Transfer Customer Payment $35000.00    $189000.00
+2024-03-22   Tax Withholding Payment    -$10800.00   $178200.00
+==================================================

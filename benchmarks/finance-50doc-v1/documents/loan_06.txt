@@ -1,0 +1,13 @@
+==================================================
+          LOAN / KYC APPLICATION FORM             
+==================================================
+Applicant Full Name:      Danielle Christine Moore
+Identification Type:      SSN
+ID Number:                XXX-XX-9022
+--------------------------------------------------
+Stated Annual Income:     $88,000.00
+Requested Loan Amount:    $12,000.00
+Stated Purpose:           Medical Expense Financing
+--------------------------------------------------
+Underwriter Risk Flags:   None (Clean Profile)
+==================================================

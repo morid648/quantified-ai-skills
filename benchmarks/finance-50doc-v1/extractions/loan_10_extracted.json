@@ -1,0 +1,29 @@
+{
+  "doc_id": "loan_10",
+  "category": "loan_application",
+  "is_noisy": true,
+  "in_tokens": 409,
+  "out_tokens": 68,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "applicant_name": "Valerie Nicole Stone",
+    "id_type": "PASSPORT",
+    "id_number": "EXPIRED-P33019",
+    "annual_income": 95000.0,
+    "requested_amount": 30000.0,
+    "loan_purpose": "Refinancing Secondary Debt",
+    "risk_flags": [
+      "EXPIRED_IDENTIFICATION",
+      "IDENTITY_VERIFICATION_FAILED"
+    ]
+  },
+  "field_confidence": {
+    "applicant_name": 0.82,
+    "id_type": 0.82,
+    "id_number": 0.82,
+    "annual_income": 0.82,
+    "requested_amount": 0.82,
+    "loan_purpose": 0.82,
+    "risk_flags": 0.9
+  }
+}

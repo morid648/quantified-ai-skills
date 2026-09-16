@@ -1,0 +1,31 @@
+{
+  "doc_id": "inv_07",
+  "category": "invoice",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "vendor_name": "BlueWave Media & Advertising",
+    "invoice_number": "BWM-2024-039",
+    "invoice_date": "2024-03-12",
+    "due_date": "2024-04-12",
+    "subtotal": 12500.0,
+    "tax_amount": 1000.0,
+    "total_amount": 13500.0,
+    "line_items": [
+      {
+        "desc": "Digital Ad Placement Retainer",
+        "qty": 1.0,
+        "unit": 8000.0,
+        "amt": 8000.0
+      },
+      {
+        "desc": "Creative Production & Video Assets",
+        "qty": 1.0,
+        "unit": 4500.0,
+        "amt": 4500.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

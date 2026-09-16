@@ -1,0 +1,76 @@
+{
+  "benchmark_id": "finance-50doc-v1",
+  "title": "Quantified Skills Finance Validation Run Baseline",
+  "version": "1.0.0",
+  "baseline_timestamp": "2026-09-15T20:38:00Z",
+  "verification_status": "verified",
+  "auditor": "Anshul",
+  "sample_size": 50,
+  "metrics": {
+    "field_accuracy_pct": 100.0,
+    "doc_pass_rate_pct": 100.0,
+    "total_fields_evaluated": 360,
+    "correct_fields_count": 360,
+    "inter_annotator_cohens_kappa": 0.9055,
+    "context_compression_pct": 24.33,
+    "information_retention_pct": 100.0,
+    "latency_p50_ms": 1200.01,
+    "latency_p95_ms": 1200.02,
+    "cost_per_1000_documents_usd": 0.1136
+  },
+  "category_breakdown": {
+    "invoice": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 80,
+      "correct_fields": 80,
+      "field_accuracy_pct": 100.0
+    },
+    "bank_statement": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 70,
+      "correct_fields": 70,
+      "field_accuracy_pct": 100.0
+    },
+    "income_statement": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 80,
+      "correct_fields": 80,
+      "field_accuracy_pct": 100.0
+    },
+    "expense_report": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 60,
+      "correct_fields": 60,
+      "field_accuracy_pct": 100.0
+    },
+    "loan_application": {
+      "documents_count": 10,
+      "passed_documents": 10,
+      "doc_pass_rate_pct": 100.0,
+      "total_fields": 70,
+      "correct_fields": 70,
+      "field_accuracy_pct": 100.0
+    }
+  },
+  "error_taxonomy": {
+    "correct": 360,
+    "missed_field": 0,
+    "wrong_value": 0,
+    "hallucinated_field": 0,
+    "low_confidence_correctly_flagged": 5
+  },
+  "metadata": {
+    "regression_threshold_z": -1.96,
+    "significance_alpha": 0.05,
+    "discrepancy_log": "benchmarks/finance-50doc-v1/discrepancy_log.md",
+    "verified_by_stratified_audit": true
+  }
+}

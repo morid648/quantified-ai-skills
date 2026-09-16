@@ -1,0 +1,28 @@
+{
+  "doc_id": "inc_06",
+  "category": "income_statement",
+  "is_noisy": false,
+  "in_tokens": 424,
+  "out_tokens": 62,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "company_name": "Silverline Consumer Products",
+    "fiscal_period": "Q1 2024",
+    "total_revenue": 950000.0,
+    "cost_of_goods_sold": 580000.0,
+    "gross_profit": 370000.0,
+    "operating_expenses": 260000.0,
+    "operating_income": 110000.0,
+    "net_income": 88000.0
+  },
+  "field_confidence": {
+    "company_name": 0.98,
+    "fiscal_period": 0.98,
+    "total_revenue": 0.98,
+    "cost_of_goods_sold": 0.98,
+    "gross_profit": 0.98,
+    "operating_expenses": 0.98,
+    "operating_income": 0.98,
+    "net_income": 0.98
+  }
+}

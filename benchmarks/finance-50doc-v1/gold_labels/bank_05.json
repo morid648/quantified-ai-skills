@@ -1,0 +1,30 @@
+{
+  "doc_id": "bank_05",
+  "category": "bank_statement",
+  "is_noisy": false,
+  "injected_flaws": [],
+  "fields": {
+    "bank_name": "Keystone National Bank",
+    "account_number": "4490-1120-77",
+    "statement_period_start": "2024-03-01",
+    "statement_period_end": "2024-03-31",
+    "opening_balance": 154000.0,
+    "closing_balance": 178200.0,
+    "transactions": [
+      {
+        "date": "2024-03-07",
+        "desc": "Wire Transfer Customer Payment",
+        "amount": 35000.0,
+        "balance": 189000.0
+      },
+      {
+        "date": "2024-03-22",
+        "desc": "Tax Withholding Payment",
+        "amount": -10800.0,
+        "balance": 178200.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": []
+}

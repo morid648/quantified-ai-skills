@@ -1,0 +1,29 @@
+{
+  "doc_id": "bank_10",
+  "category": "bank_statement",
+  "is_noisy": true,
+  "injected_flaws": [
+    "overdraft_negative_closing_balance"
+  ],
+  "fields": {
+    "bank_name": "Keystone National Bank",
+    "account_number": "4490-8811-00",
+    "statement_period_start": "2024-04-01",
+    "statement_period_end": "2024-04-30",
+    "opening_balance": 2100.0,
+    "closing_balance": -450.0,
+    "transactions": [
+      {
+        "date": "2024-04-12",
+        "desc": "ACH Debit: Equipment Rental",
+        "amount": -2550.0,
+        "balance": -450.0
+      }
+    ]
+  },
+  "self_consistency_passed": true,
+  "risk_flags": [
+    "overdraft_negative_closing_balance"
+  ],
+  "annotator_id": "annotator_pass_2"
+}

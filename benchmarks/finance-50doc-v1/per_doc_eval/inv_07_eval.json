@@ -1,0 +1,101 @@
+{
+  "doc_id": "inv_07",
+  "category": "invoice",
+  "is_noisy": false,
+  "fields_total": 8,
+  "fields_correct": 8,
+  "field_accuracy_pct": 100.0,
+  "doc_passed": true,
+  "field_evaluations": {
+    "vendor_name": {
+      "extracted": "BlueWave Media & Advertising",
+      "expected": "BlueWave Media & Advertising",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_number": {
+      "extracted": "BWM-2024-039",
+      "expected": "BWM-2024-039",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "invoice_date": {
+      "extracted": "2024-03-12",
+      "expected": "2024-03-12",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "due_date": {
+      "extracted": "2024-04-12",
+      "expected": "2024-04-12",
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "subtotal": {
+      "extracted": 12500.0,
+      "expected": 12500.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "tax_amount": {
+      "extracted": 1000.0,
+      "expected": 1000.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "total_amount": {
+      "extracted": 13500.0,
+      "expected": 13500.0,
+      "matched": true,
+      "confidence": 0.98,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    },
+    "line_items": {
+      "extracted": [
+        {
+          "desc": "Digital Ad Placement Retainer",
+          "qty": 1.0,
+          "unit": 8000.0,
+          "amt": 8000.0
+        },
+        {
+          "desc": "Creative Production & Video Assets",
+          "qty": 1.0,
+          "unit": 4500.0,
+          "amt": 4500.0
+        }
+      ],
+      "expected": [
+        {
+          "desc": "Digital Ad Placement Retainer",
+          "qty": 1.0,
+          "unit": 8000.0,
+          "amt": 8000.0
+        },
+        {
+          "desc": "Creative Production & Video Assets",
+          "qty": 1.0,
+          "unit": 4500.0,
+          "amt": 4500.0
+        }
+      ],
+      "matched": true,
+      "confidence": 0.96,
+      "error_type": "CORRECT",
+      "low_confidence_flagged": false
+    }
+  }
+}

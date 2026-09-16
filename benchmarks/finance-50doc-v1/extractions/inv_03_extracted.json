@@ -1,0 +1,41 @@
+{
+  "doc_id": "inv_03",
+  "category": "invoice",
+  "is_noisy": false,
+  "in_tokens": 452,
+  "out_tokens": 100,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "vendor_name": "Crestview Strategic Consulting",
+    "invoice_number": "CSC-9904",
+    "invoice_date": "2024-02-01",
+    "due_date": "2024-03-01",
+    "subtotal": 14500.0,
+    "tax_amount": 0.0,
+    "total_amount": 14500.0,
+    "line_items": [
+      {
+        "desc": "Q1 Market Expansion Feasibility Study",
+        "qty": 40.0,
+        "unit": 275.0,
+        "amt": 11000.0
+      },
+      {
+        "desc": "Competitive Intelligence Dossier",
+        "qty": 1.0,
+        "unit": 3500.0,
+        "amt": 3500.0
+      }
+    ]
+  },
+  "field_confidence": {
+    "vendor_name": 0.98,
+    "invoice_number": 0.98,
+    "invoice_date": 0.98,
+    "due_date": 0.98,
+    "subtotal": 0.98,
+    "tax_amount": 0.98,
+    "total_amount": 0.98,
+    "line_items": 0.96
+  }
+}

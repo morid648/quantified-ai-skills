@@ -1,0 +1,270 @@
+{
+  "generatedAt": "2026-02-08T00:00:00.000Z",
+  "total": 11,
+  "skills": [
+    {
+      "id": "annotation-guideline-writer",
+      "name": "annotation-guideline-writer",
+      "description": "Authors unambiguous annotation guidelines, schemas, edge-case rules, and worked examples, evaluating guidelines against a quantified completeness score.",
+      "category": "general",
+      "tags": [
+        "ai-annotation"
+      ],
+      "triggers": [
+        "ai-annotation",
+        "annotation",
+        "guideline",
+        "writer",
+        "authors",
+        "unambiguous",
+        "guidelines",
+        "schemas",
+        "edge",
+        "case",
+        "rules",
+        "worked"
+      ],
+      "path": "skills\\annotation-guideline-writer\\SKILL.md"
+    },
+    {
+      "id": "annotation-qa-scoring",
+      "name": "annotation-qa-scoring",
+      "description": "Calculates inter-annotator agreement (Cohen's/Fleiss' kappa), gold-set accuracy, and error taxonomy breakdowns to quantify annotation quality and consistency.",
+      "category": "testing",
+      "tags": [
+        "ai-annotation"
+      ],
+      "triggers": [
+        "ai-annotation",
+        "annotation",
+        "qa",
+        "scoring",
+        "calculates",
+        "inter",
+        "annotator",
+        "agreement",
+        "cohen",
+        "fleiss",
+        "kappa",
+        "gold"
+      ],
+      "path": "skills\\annotation-qa-scoring\\SKILL.md"
+    },
+    {
+      "id": "context-budget-allocator",
+      "name": "context-budget-allocator",
+      "description": "Allocates fixed token budgets across multi-document sources via keep/summarize/drop rules, quantifying budget utilization and downstream task accuracy impact.",
+      "category": "general",
+      "tags": [
+        "context-optimization"
+      ],
+      "triggers": [
+        "context-optimization",
+        "context",
+        "budget",
+        "allocator",
+        "allocates",
+        "fixed",
+        "token",
+        "budgets",
+        "multi",
+        "document",
+        "sources",
+        "via"
+      ],
+      "path": "skills\\context-budget-allocator\\SKILL.md"
+    },
+    {
+      "id": "document-context-chunking",
+      "name": "document-context-chunking",
+      "description": "Chunks complex financial documents preserving cross-references and tables, quantifying token reduction and information retention via factual probes.",
+      "category": "general",
+      "tags": [
+        "context-optimization"
+      ],
+      "triggers": [
+        "context-optimization",
+        "document",
+        "context",
+        "chunking",
+        "chunks",
+        "complex",
+        "financial",
+        "documents",
+        "preserving",
+        "cross",
+        "references",
+        "tables"
+      ],
+      "path": "skills\\document-context-chunking\\SKILL.md"
+    },
+    {
+      "id": "eval-harness-builder",
+      "name": "eval-harness-builder",
+      "description": "Assembles golden-set evaluation harnesses (input, expected output, automated grader) with pass rate thresholds and human-review escalation rules.",
+      "category": "general",
+      "tags": [
+        "ai-training-eval"
+      ],
+      "triggers": [
+        "ai-training-eval",
+        "eval",
+        "harness",
+        "builder",
+        "assembles",
+        "golden",
+        "set",
+        "evaluation",
+        "harnesses",
+        "input",
+        "expected",
+        "output"
+      ],
+      "path": "skills\\eval-harness-builder\\SKILL.md"
+    },
+    {
+      "id": "extraction-prompt-library-finance",
+      "name": "extraction-prompt-library-finance",
+      "description": "Production prompt templates and JSON schemas for extracting structured fields from 5 financial document categories with mandatory field-level confidence scores.",
+      "category": "business",
+      "tags": [
+        "prompt-engineering"
+      ],
+      "triggers": [
+        "prompt-engineering",
+        "extraction",
+        "prompt",
+        "library",
+        "finance",
+        "json",
+        "schemas",
+        "extracting",
+        "structured",
+        "fields",
+        "financial",
+        "document"
+      ],
+      "path": "skills\\extraction-prompt-library-finance\\SKILL.md"
+    },
+    {
+      "id": "finance-document-annotator",
+      "name": "finance-document-annotator",
+      "description": "Annotation schemas and procedures for tagging financial documents to produce gold labels, enforcing arithmetic self-consistency and anomaly flag verification.",
+      "category": "business",
+      "tags": [
+        "ai-annotation"
+      ],
+      "triggers": [
+        "ai-annotation",
+        "finance",
+        "document",
+        "annotator",
+        "annotation",
+        "schemas",
+        "procedures",
+        "tagging",
+        "financial",
+        "documents",
+        "produce",
+        "gold"
+      ],
+      "path": "skills\\finance-document-annotator\\SKILL.md"
+    },
+    {
+      "id": "prompt-scorecard-testing",
+      "name": "prompt-scorecard-testing",
+      "description": "Runs multi-variant prompt A/B testing against labeled test sets, scoring variants across accuracy/F1, latency (p50/p95), and cost per 1,000 calls.",
+      "category": "testing",
+      "tags": [
+        "prompt-engineering"
+      ],
+      "triggers": [
+        "prompt-engineering",
+        "prompt",
+        "scorecard",
+        "testing",
+        "runs",
+        "multi",
+        "variant",
+        "against",
+        "labeled",
+        "test",
+        "sets",
+        "scoring"
+      ],
+      "path": "skills\\prompt-scorecard-testing\\SKILL.md"
+    },
+    {
+      "id": "quantified-eval-orchestrator",
+      "name": "quantified-eval-orchestrator",
+      "description": "Orchestrates end-to-end quantified AI pipelines across data scoring, context optimization, prompt extraction, annotation QA, and regression benchmarking.",
+      "category": "data-ai",
+      "tags": [
+        "quantified-eval-suite"
+      ],
+      "triggers": [
+        "quantified-eval-suite",
+        "quantified",
+        "eval",
+        "orchestrator",
+        "orchestrates",
+        "ai",
+        "pipelines",
+        "data",
+        "scoring",
+        "context",
+        "optimization",
+        "prompt"
+      ],
+      "path": "skills\\quantified-eval-orchestrator\\SKILL.md"
+    },
+    {
+      "id": "regression-benchmark-tracker",
+      "name": "regression-benchmark-tracker",
+      "description": "Tracks benchmark run histories, statistically evaluates metric deltas vs baselines via z-tests, and alerts on performance regressions.",
+      "category": "general",
+      "tags": [
+        "ai-training-eval"
+      ],
+      "triggers": [
+        "ai-training-eval",
+        "regression",
+        "benchmark",
+        "tracker",
+        "tracks",
+        "run",
+        "histories",
+        "statistically",
+        "evaluates",
+        "metric",
+        "deltas",
+        "vs"
+      ],
+      "path": "skills\\regression-benchmark-tracker\\SKILL.md"
+    },
+    {
+      "id": "training-data-quality-scorer",
+      "name": "training-data-quality-scorer",
+      "description": "Evaluates candidate training or fine-tuning examples using a 4-dimension rubric (1-5), emitting a 0-100 composite quality score and batch rejection rate.",
+      "category": "data-ai",
+      "tags": [
+        "ai-training-eval"
+      ],
+      "triggers": [
+        "ai-training-eval",
+        "training",
+        "data",
+        "quality",
+        "scorer",
+        "evaluates",
+        "candidate",
+        "fine",
+        "tuning",
+        "examples",
+        "dimension",
+        "rubric"
+      ],
+      "path": "skills\\training-data-quality-scorer\\SKILL.md"
+    }
+  ]
+}

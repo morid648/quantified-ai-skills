@@ -1,0 +1,8 @@
+{
+  "doc_id": "inc_02",
+  "original_tokens": 172,
+  "optimized_tokens": 129,
+  "compression_ratio_pct": 25.0,
+  "information_retention_pct": 100.0,
+  "content": "STATEMENT OF OPERATIONS / INCOME\nCompany Name:   Vanguard Biotech Inc\nFiscal Period:  Q1 2024\n--------------------------------------------------\nTotal Revenue:                   $840,000.00\nCost of Goods Sold (COGS):       $210,000.00\nGross Profit:                    $630,000.00\n--------------------------------------------------\nOperating Expenses (OpEx):       $490,000.00\nOperating Income:                $140,000.00\n--------------------------------------------------\nNet Income:                      $112,000.00"
+}

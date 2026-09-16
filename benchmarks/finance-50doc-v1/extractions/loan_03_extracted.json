@@ -1,0 +1,26 @@
+{
+  "doc_id": "loan_03",
+  "category": "loan_application",
+  "is_noisy": false,
+  "in_tokens": 400,
+  "out_tokens": 53,
+  "latency_ms": 1200.01,
+  "extractions": {
+    "applicant_name": "Robert Taylor Sterling",
+    "id_type": "TAX_ID",
+    "id_number": "XX-XXX7701",
+    "annual_income": 220000.0,
+    "requested_amount": 50000.0,
+    "loan_purpose": "Working Capital Expansion",
+    "risk_flags": []
+  },
+  "field_confidence": {
+    "applicant_name": 0.98,
+    "id_type": 0.98,
+    "id_number": 0.98,
+    "annual_income": 0.98,
+    "requested_amount": 0.98,
+    "loan_purpose": 0.98,
+    "risk_flags": 0.98
+  }
+}
