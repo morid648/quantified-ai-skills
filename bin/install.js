@@ -98,9 +98,9 @@ function defaultDir(opts) {
 
 function printHelp() {
   console.log(`
-antigravity-awesome-skills — installer
+quantified-ai-skills — installer
 
-  npx antigravity-awesome-skills [install] [options]
+  npx quantified-ai-skills [install] [options]
 
   Clones the skills repo into your agent's skills directory.
 
@@ -116,12 +116,12 @@ Options:
   --tag <tag>      After clone, checkout this tag (e.g. v4.6.0)
 
 Examples:
-  npx antigravity-awesome-skills
-  npx antigravity-awesome-skills --cursor
-  npx antigravity-awesome-skills --kiro
-  npx antigravity-awesome-skills --antigravity
-  npx antigravity-awesome-skills --version 4.6.0
-  npx antigravity-awesome-skills --path ./my-skills
+  npx quantified-ai-skills
+  npx quantified-ai-skills --cursor
+  npx quantified-ai-skills --kiro
+  npx quantified-ai-skills --antigravity
+  npx quantified-ai-skills --version 4.6.0
+  npx quantified-ai-skills --path ./my-skills
 `);
 }
 
