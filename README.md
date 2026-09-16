@@ -38,6 +38,7 @@ Unlike conventional qualitative agent skills that offer vague heuristic advice, 
 - 📘 [**How to Use (Non-Technical Guide)**](HOW_TO_USE.md) - Plain-English guide for business leaders and financial teams.
 - 🛠️ [**Skills Architecture & Technical Manual**](SKILLS_GUIDE.md) - Comprehensive technical breakdown of all 11 skills and formulas.
 - 📊 [**50-Document Finance Benchmark Report**](benchmarks/finance-50doc-v1/REPORT.md) - Baseline scorecard, noise injection, and empirical results.
+- 🧾 [**Results Evidence**](benchmarks/finance-50doc-v1/RESULTS_EVIDENCE.md) - Raw source documents, raw model output, and gold labels side by side for every claim in the report, including the 2 real failures in full — independently verifiable, not just asserted.
 - 🔍 [**Root Cause Analysis (RCA)**](ROOT_CAUSE_ANALYSIS.md) - In-depth engineering breakdown of all defects identified and resolved.
 - 📖 [**Complete Usage Guide**](docs/USAGE.md) - Step-by-step prompt templates and hands-on scenarios.
 - 🚀 [**Getting Started**](docs/GETTING_STARTED.md) - Quickstart in under 5 minutes.

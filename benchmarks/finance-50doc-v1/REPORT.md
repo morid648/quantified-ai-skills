@@ -150,6 +150,8 @@ Both wrong-value fields are the same failure mode, on the same field, in the sam
 
 **The more interesting finding is the confidence miscalibration**, not the error itself: the model was *not* uncertain about either wrong answer (0.98 and 0.95 confidence — well above the 0.70 flagging threshold), while two genuinely low-confidence fields elsewhere in the run (`inc_09`'s `fiscal_period` at 0.65, `inv_09`'s `due_date` at 0.50) were both correctly extracted despite the model's own doubt. In other words: this model's confidence score is a good signal for "I know this is ambiguous," but not a reliable signal for "I might be systematically wrong about a formatting convention I'm confident I understand." That's a real, useful, and non-obvious result — exactly the kind of thing a synthetic/simulated harness can't surface.
 
+**For the full raw evidence** — the actual source document text, the actual raw model JSON output, and the gold label for both failures (plus two passing examples) side by side, with every claim linked to a real file in this repo — see [`RESULTS_EVIDENCE.md`](RESULTS_EVIDENCE.md).
+
 ---
 
 ## 4. Context Optimization & Token Economics
