@@ -11,7 +11,7 @@
       "extracted": "Chloe Bennett",
       "expected": "Chloe Bennett",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "EXP-2024-090",
       "expected": "EXP-2024-090",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-04-02",
       "expected": "2024-04-02",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 130.0,
       "expected": 130.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": "REJECTED",
       "expected": "REJECTED",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -77,7 +77,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.85,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

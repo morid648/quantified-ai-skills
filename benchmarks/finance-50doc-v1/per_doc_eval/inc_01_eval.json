@@ -3,31 +3,31 @@
   "category": "income_statement",
   "is_noisy": false,
   "fields_total": 8,
-  "fields_correct": 8,
-  "field_accuracy_pct": 100.0,
-  "doc_passed": true,
+  "fields_correct": 7,
+  "field_accuracy_pct": 87.5,
+  "doc_passed": false,
   "field_evaluations": {
     "company_name": {
       "extracted": "Northstar Logistics Corp",
       "expected": "Northstar Logistics Corp",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
     "fiscal_period": {
-      "extracted": "Q1 2024",
+      "extracted": "2024-03-31",
       "expected": "Q1 2024",
-      "matched": true,
+      "matched": false,
       "confidence": 0.98,
-      "error_type": "CORRECT",
+      "error_type": "WRONG_VALUE",
       "low_confidence_flagged": false
     },
     "total_revenue": {
       "extracted": 1250000.0,
       "expected": 1250000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 650000.0,
       "expected": 650000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 600000.0,
       "expected": 600000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 380000.0,
       "expected": 380000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -59,7 +59,7 @@
       "extracted": 220000.0,
       "expected": 220000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -67,7 +67,7 @@
       "extracted": 176000.0,
       "expected": 176000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

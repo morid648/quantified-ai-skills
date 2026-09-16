@@ -11,7 +11,7 @@
       "extracted": "Metro Commercial Bank",
       "expected": "Metro Commercial Bank",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "3391-7722-60",
       "expected": "3391-7722-60",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-02-01",
       "expected": "2024-02-01",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": "2024-02-29",
       "expected": "2024-02-29",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 76500.0,
       "expected": 76500.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 62100.0,
       "expected": 62100.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -85,7 +85,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.96,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

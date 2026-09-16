@@ -2,9 +2,9 @@
   "doc_id": "inc_09",
   "category": "income_statement",
   "is_noisy": true,
-  "in_tokens": 430,
-  "out_tokens": 67,
-  "latency_ms": 1200.01,
+  "in_tokens": 636,
+  "out_tokens": 218,
+  "latency_ms": 1025.08,
   "extractions": {
     "company_name": "Cascade Marine Services",
     "fiscal_period": "TTM Ended Q2 2024 (Non-Standard)",
@@ -16,13 +16,14 @@
     "net_income": 112000.0
   },
   "field_confidence": {
-    "company_name": 0.82,
-    "fiscal_period": 0.72,
-    "total_revenue": 0.82,
-    "cost_of_goods_sold": 0.82,
-    "gross_profit": 0.82,
-    "operating_expenses": 0.82,
-    "operating_income": 0.82,
-    "net_income": 0.82
-  }
+    "company_name": 0.98,
+    "fiscal_period": 0.65,
+    "total_revenue": 0.97,
+    "cost_of_goods_sold": 0.97,
+    "gross_profit": 0.97,
+    "operating_expenses": 0.96,
+    "operating_income": 0.96,
+    "net_income": 0.96
+  },
+  "model": "openai/gpt-oss-120b"
 }

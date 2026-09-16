@@ -11,7 +11,7 @@
       "extracted": "Keystone National Bank",
       "expected": "Keystone National Bank",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "4490-8811-00",
       "expected": "4490-8811-00",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-04-01",
       "expected": "2024-04-01",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": "2024-04-30",
       "expected": "2024-04-30",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 2100.0,
       "expected": 2100.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": -450.0,
       "expected": -450.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -73,7 +73,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.85,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

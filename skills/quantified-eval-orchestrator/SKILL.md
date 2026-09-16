@@ -83,37 +83,38 @@ Every execution of this master orchestration skill produces an aggregated end-to
 
 - **Total Documents Processed**: 50 / 50 (100% completion rate).
 - **Total Discrete Fields Evaluated**: 360 fields.
-- **Overall Field Extraction Accuracy**: $100.0\%$ (360/360 correct).
-- **Document Full-Pass Rate**: $100.0\%$ (50/50 passed).
+- **Overall Field Extraction Accuracy**: $99.44\%$ (358/360 correct, via real Groq `openai/gpt-oss-120b` API calls).
+- **Document Full-Pass Rate**: $96.0\%$ (48/50 passed).
 - **Context Token Compression**: $24.33\%$ reduction with $100.0\%$ factual retention.
 - **Inter-Annotator Agreement**: Cohen's $\kappa = 0.9055$ (Almost Perfect).
-- **Unit Processing Cost**: $\$0.1136\text{ USD}$ per 1,000 documents.
-- **Verification Verdict**: `VERIFIED` (Auditor certified on 10 spot-check documents).
+- **Unit Processing Cost**: $\$0.2367\text{ USD}$ per 1,000 documents (real Groq pricing).
+- **Verification Verdict**: grader logic `VERIFIED` (auditor certified on 10 spot-check documents against the prior extraction run); this run's 2 real misses are documented, not audited by that spot-check — see `benchmarks/finance-50doc-v1/REPORT.md` §3.2 and §5.
 
 ### Machine-Readable Result Block
 
 ```json
 {
   "skill_name": "quantified-eval-orchestrator",
-  "version": "1.0.0",
-  "timestamp": "2026-09-15T20:38:00Z",
+  "version": "2.0.0",
+  "timestamp": "2026-09-16T12:22:07Z",
   "sample_size": 50,
   "status": "pass",
+  "extraction_method": { "provider": "groq", "model": "openai/gpt-oss-120b" },
   "metrics": {
-    "field_accuracy_pct": 100.0,
-    "doc_pass_rate_pct": 100.0,
+    "field_accuracy_pct": 99.44,
+    "doc_pass_rate_pct": 96.0,
     "total_fields_evaluated": 360,
-    "correct_fields_count": 360,
+    "correct_fields_count": 358,
     "inter_annotator_cohens_kappa": 0.9055,
     "context_compression_pct": 24.33,
     "factual_retention_pct": 100.0,
-    "cost_per_1000_docs_usd": 0.1136,
-    "latency_p50_ms": 1200.01,
-    "latency_p95_ms": 1200.02
+    "cost_per_1000_docs_usd": 0.2367,
+    "latency_p50_ms": 1049.59,
+    "latency_p95_ms": 1654.27
   },
   "metadata": {
     "pipeline_steps_completed": 8,
-    "verification_status": "verified",
+    "verification_status": "extraction_verified_live_llm_audit_pending",
     "baseline_id": "finance-50doc-v1"
   }
 }

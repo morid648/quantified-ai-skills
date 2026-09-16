@@ -2,9 +2,9 @@
   "doc_id": "inc_05",
   "category": "income_statement",
   "is_noisy": false,
-  "in_tokens": 425,
-  "out_tokens": 63,
-  "latency_ms": 1200.01,
+  "in_tokens": 630,
+  "out_tokens": 201,
+  "latency_ms": 952.53,
   "extractions": {
     "company_name": "Zenith Financial Technologies",
     "fiscal_period": "Q1 2024",
@@ -16,13 +16,14 @@
     "net_income": 432000.0
   },
   "field_confidence": {
-    "company_name": 0.98,
-    "fiscal_period": 0.98,
-    "total_revenue": 0.98,
-    "cost_of_goods_sold": 0.98,
-    "gross_profit": 0.98,
-    "operating_expenses": 0.98,
-    "operating_income": 0.98,
-    "net_income": 0.98
-  }
+    "company_name": 0.99,
+    "fiscal_period": 0.99,
+    "total_revenue": 0.99,
+    "cost_of_goods_sold": 0.99,
+    "gross_profit": 0.99,
+    "operating_expenses": 0.99,
+    "operating_income": 0.99,
+    "net_income": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

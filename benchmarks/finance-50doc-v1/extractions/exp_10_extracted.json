@@ -2,9 +2,9 @@
   "doc_id": "exp_10",
   "category": "expense_report",
   "is_noisy": true,
-  "in_tokens": 422,
-  "out_tokens": 98,
-  "latency_ms": 1200.01,
+  "in_tokens": 590,
+  "out_tokens": 294,
+  "latency_ms": 1157.01,
   "extractions": {
     "employee_name": "Chloe Bennett",
     "report_id": "EXP-2024-090",
@@ -27,11 +27,12 @@
     ]
   },
   "field_confidence": {
-    "employee_name": 0.82,
-    "report_id": 0.82,
-    "submission_date": 0.82,
-    "total_amount": 0.82,
-    "approval_status": 0.82,
-    "expense_items": 0.85
-  }
+    "employee_name": 1.0,
+    "report_id": 1.0,
+    "submission_date": 1.0,
+    "total_amount": 1.0,
+    "approval_status": 1.0,
+    "expense_items": 1.0
+  },
+  "model": "openai/gpt-oss-120b"
 }

@@ -26,14 +26,14 @@ This repository was audited for end-to-end correctness, quantitative metric accu
 
 All documentation metrics have been verified against raw empirical logs in `benchmarks/finance-50doc-v1/`:
 
-1. **Overall Field-Level Extraction Accuracy**: **100.0%** (360/360 fields correct).
-2. **Document Full-Pass Rate**: **100.0%** (50/50 documents passed).
+1. **Overall Field-Level Extraction Accuracy**: **99.44%** (358/360 fields correct).
+2. **Document Full-Pass Rate**: **96.0%** (48/50 documents passed).
 3. **Inter-Annotator Agreement (Cohen's $\kappa$)**: **0.9055** on 10-document double-annotated subset.
 4. **Context Token Compression Ratio**: **24.33%** reduction (3,526 tokens $\rightarrow$ 2,668 tokens).
 5. **Factual Information Retention**: **100.0%** (20/20 anchor probes verified).
-6. **Inference Latency Profile**: p50 = **1,200 ms**, p95 = **1,200 ms**.
-7. **Cost per 1,000 Documents**: **$0.1136 USD**.
-8. **Human Spot Check**: 10-document stratified audit confirmed 0.0% false positives and 0.0% false negatives.
+6. **Inference Latency Profile**: p50 = **1,050 ms**, p95 = **1,654 ms** (real measured latency, Groq `openai/gpt-oss-120b`).
+7. **Cost per 1,000 Documents**: **$0.2367 USD** (real Groq pricing, not a reference estimate).
+8. **Human Spot Check**: 10-document stratified audit confirmed 0.0% false positives and 0.0% false negatives on the grader logic — performed against the original extraction run, not the current live-model run (see `benchmarks/finance-50doc-v1/run_manifest.json`'s `superseded_by` note).
 
 ---
 

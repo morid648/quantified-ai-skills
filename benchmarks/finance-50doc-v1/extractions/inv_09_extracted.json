@@ -2,9 +2,9 @@
   "doc_id": "inv_09",
   "category": "invoice",
   "is_noisy": true,
-  "in_tokens": 455,
-  "out_tokens": 95,
-  "latency_ms": 1200.01,
+  "in_tokens": 673,
+  "out_tokens": 414,
+  "latency_ms": 1431.2,
   "extractions": {
     "vendor_name": "OmniTek Global Software",
     "invoice_number": "OTG-90211",
@@ -29,13 +29,14 @@
     ]
   },
   "field_confidence": {
-    "vendor_name": 0.82,
-    "invoice_number": 0.82,
-    "invoice_date": 0.82,
+    "vendor_name": 0.99,
+    "invoice_number": 0.99,
+    "invoice_date": 0.99,
     "due_date": 0.5,
-    "subtotal": 0.82,
-    "tax_amount": 0.82,
-    "total_amount": 0.82,
-    "line_items": 0.85
-  }
+    "subtotal": 0.99,
+    "tax_amount": 0.99,
+    "total_amount": 0.99,
+    "line_items": 0.96
+  },
+  "model": "openai/gpt-oss-120b"
 }

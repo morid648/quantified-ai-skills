@@ -2,12 +2,12 @@
   "doc_id": "inc_10",
   "category": "income_statement",
   "is_noisy": true,
-  "in_tokens": 423,
-  "out_tokens": 60,
-  "latency_ms": 1200.01,
+  "in_tokens": 630,
+  "out_tokens": 243,
+  "latency_ms": 1075.96,
   "extractions": {
     "company_name": "Delta Robotics Lab",
-    "fiscal_period": "Q1 2024",
+    "fiscal_period": "2024-Q1",
     "total_revenue": 2200000.0,
     "cost_of_goods_sold": 980000.0,
     "gross_profit": 1220000.0,
@@ -16,13 +16,14 @@
     "net_income": 371000.0
   },
   "field_confidence": {
-    "company_name": 0.82,
-    "fiscal_period": 0.82,
-    "total_revenue": 0.82,
-    "cost_of_goods_sold": 0.82,
-    "gross_profit": 0.82,
-    "operating_expenses": 0.82,
-    "operating_income": 0.82,
-    "net_income": 0.65
-  }
+    "company_name": 0.99,
+    "fiscal_period": 0.95,
+    "total_revenue": 0.99,
+    "cost_of_goods_sold": 0.99,
+    "gross_profit": 0.99,
+    "operating_expenses": 0.99,
+    "operating_income": 0.99,
+    "net_income": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

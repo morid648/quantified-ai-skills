@@ -2,9 +2,9 @@
   "doc_id": "inv_10",
   "category": "invoice",
   "is_noisy": true,
-  "in_tokens": 449,
-  "out_tokens": 94,
-  "latency_ms": 1200.01,
+  "in_tokens": 666,
+  "out_tokens": 259,
+  "latency_ms": 1022.19,
   "extractions": {
     "vendor_name": "Acme Industrial Supplies",
     "invoice_number": "AIS-66100",
@@ -29,13 +29,14 @@
     ]
   },
   "field_confidence": {
-    "vendor_name": 0.82,
-    "invoice_number": 0.82,
-    "invoice_date": 0.82,
-    "due_date": 0.82,
-    "subtotal": 0.82,
-    "tax_amount": 0.82,
-    "total_amount": 0.65,
-    "line_items": 0.85
-  }
+    "vendor_name": 0.99,
+    "invoice_number": 0.99,
+    "invoice_date": 0.99,
+    "due_date": 0.99,
+    "subtotal": 0.99,
+    "tax_amount": 0.99,
+    "total_amount": 0.99,
+    "line_items": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

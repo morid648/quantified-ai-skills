@@ -40,14 +40,16 @@ The dataset incorporates a **20% stress noise injection** (10 noisy documents wi
 ### What are the verified performance metrics?
 
 Against the 50-document financial dataset, the suite achieved:
-- **Field-Level Extraction Accuracy**: **100.0%** (360/360 fields correct; target $\ge 90.0\%$)
-- **Document Full-Pass Rate**: **100.0%** (50/50 documents passed; target $\ge 85.0\%$)
+- **Field-Level Extraction Accuracy**: **99.44%** (358/360 fields correct; target $\ge 90.0\%$)
+- **Document Full-Pass Rate**: **96.0%** (48/50 documents passed; target $\ge 85.0\%$)
 - **Inter-Annotator Agreement**: **$\kappa = 0.9055$** (Cohen's Kappa on double-annotated subset; target $\ge 0.81$)
 - **Context Token Compression**: **24.33%** reduction (3,526 raw tokens $\rightarrow$ 2,668 optimized tokens; target $\ge 20.0\%$)
 - **Factual Information Retention**: **100.0%** (20/20 anchor probes preserved; target $\ge 95.0\%$)
-- **Inference Latency Profile**: Median p50 = **1,200 ms**, p95 = **1,200 ms** (target $< 3,000\text{ ms}$)
-- **Estimated Unit Cost**: **$0.1136 USD per 1,000 documents** (target $< $0.50 USD)
-- **Human Spot-Check Verification**: 10-document stratified audit confirmed 0.0% false positives and 0.0% false negatives.
+- **Inference Latency Profile**: Median p50 = **1,050 ms**, p95 = **1,654 ms** — real measured latency against a live model (Groq `openai/gpt-oss-120b`), target $< 3,000\text{ ms}$
+- **Measured Unit Cost**: **$0.2367 USD per 1,000 documents** (real Groq pricing; target $< $0.50 USD)
+- **Human Spot-Check Verification**: 10-document stratified audit confirmed 0.0% false positives and 0.0% false negatives on the grader logic (see `benchmarks/finance-50doc-v1/REPORT.md` §5 for what this does and doesn't certify about the current run).
+
+The 2 field-level misses (out of 360) are a real, explainable finding, not simulation noise — see `REPORT.md` §3.2.
 
 ---
 

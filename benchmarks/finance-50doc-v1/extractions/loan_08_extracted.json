@@ -2,9 +2,9 @@
   "doc_id": "loan_08",
   "category": "loan_application",
   "is_noisy": false,
-  "in_tokens": 399,
-  "out_tokens": 52,
-  "latency_ms": 1200.01,
+  "in_tokens": 567,
+  "out_tokens": 183,
+  "latency_ms": 971.45,
   "extractions": {
     "applicant_name": "Sunita Lakshmi Rao",
     "id_type": "PASSPORT",
@@ -15,12 +15,13 @@
     "risk_flags": []
   },
   "field_confidence": {
-    "applicant_name": 0.98,
-    "id_type": 0.98,
-    "id_number": 0.98,
-    "annual_income": 0.98,
-    "requested_amount": 0.98,
-    "loan_purpose": 0.98,
-    "risk_flags": 0.98
-  }
+    "applicant_name": 0.99,
+    "id_type": 0.99,
+    "id_number": 0.99,
+    "annual_income": 0.99,
+    "requested_amount": 0.99,
+    "loan_purpose": 0.99,
+    "risk_flags": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

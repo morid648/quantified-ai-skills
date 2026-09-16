@@ -24,5 +24,8 @@
     "latency_p50_ms": 1200.01,
     "latency_p95_ms": 1200.01
   },
-  "certification": "All 10 audited spot-check documents verified. Grader false positive and false negative rates calibrated to 0.0%. Run certified as benchmark v1.0 baseline."
+  "certification": "All 10 audited spot-check documents verified. Grader false positive and false negative rates calibrated to 0.0%. Run certified as benchmark v1.0 baseline.",
+  "superseded_by": {
+    "note": "This audit validated the grader logic (compare_values() in run_finance_benchmark.py) against the original simulated-harness extraction run. On 2026-09-16 the extraction step was rebuilt to call a real LLM (Groq, openai/gpt-oss-120b) -- see baseline_run.json v2.0.0 for the current metrics_summary and known_failures. The grader itself is unchanged, so this audit's grader-correctness findings still hold, but the 10 audited documents don't include either of the new run's 2 real failures, so this is not a certification of the new run's extraction accuracy."
+  }
 }

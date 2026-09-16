@@ -2,9 +2,9 @@
   "doc_id": "bank_09",
   "category": "bank_statement",
   "is_noisy": true,
-  "in_tokens": 429,
-  "out_tokens": 105,
-  "latency_ms": 1200.01,
+  "in_tokens": 637,
+  "out_tokens": 362,
+  "latency_ms": 1733.12,
   "extractions": {
     "bank_name": "Summit City Union Bank",
     "account_number": "7710-9941-O8",
@@ -28,12 +28,13 @@
     ]
   },
   "field_confidence": {
-    "bank_name": 0.82,
-    "account_number": 0.68,
-    "statement_period_start": 0.82,
-    "statement_period_end": 0.82,
-    "opening_balance": 0.82,
-    "closing_balance": 0.82,
-    "transactions": 0.85
-  }
+    "bank_name": 1.0,
+    "account_number": 1.0,
+    "statement_period_start": 1.0,
+    "statement_period_end": 1.0,
+    "opening_balance": 1.0,
+    "closing_balance": 1.0,
+    "transactions": 1.0
+  },
+  "model": "openai/gpt-oss-120b"
 }

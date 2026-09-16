@@ -2,9 +2,9 @@
   "doc_id": "bank_01",
   "category": "bank_statement",
   "is_noisy": false,
-  "in_tokens": 447,
-  "out_tokens": 133,
-  "latency_ms": 1200.03,
+  "in_tokens": 665,
+  "out_tokens": 281,
+  "latency_ms": 1252.82,
   "extractions": {
     "bank_name": "First Horizon Commercial Bank",
     "account_number": "9820-4411-82",
@@ -34,12 +34,13 @@
     ]
   },
   "field_confidence": {
-    "bank_name": 0.98,
-    "account_number": 0.98,
-    "statement_period_start": 0.98,
-    "statement_period_end": 0.98,
-    "opening_balance": 0.98,
-    "closing_balance": 0.98,
-    "transactions": 0.96
-  }
+    "bank_name": 0.99,
+    "account_number": 0.99,
+    "statement_period_start": 0.99,
+    "statement_period_end": 0.99,
+    "opening_balance": 0.99,
+    "closing_balance": 0.99,
+    "transactions": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

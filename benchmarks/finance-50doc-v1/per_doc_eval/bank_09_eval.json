@@ -11,7 +11,7 @@
       "extracted": "Summit City Union Bank",
       "expected": "Summit City Union Bank",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,15 +19,15 @@
       "extracted": "7710-9941-O8",
       "expected": "7710-9941-O8",
       "matched": true,
-      "confidence": 0.68,
+      "confidence": 1.0,
       "error_type": "CORRECT",
-      "low_confidence_flagged": true
+      "low_confidence_flagged": false
     },
     "statement_period_start": {
       "extracted": "2024-03-01",
       "expected": "2024-03-01",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": "2024-03-31",
       "expected": "2024-03-31",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 12500.0,
       "expected": 12500.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 8750.0,
       "expected": 8750.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -85,7 +85,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.85,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

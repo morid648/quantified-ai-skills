@@ -20,16 +20,16 @@ Unlike conventional qualitative agent skills that offer vague heuristic advice, 
 
 | Metric | Measured Value | Standard / Target | Status |
 |---|---|---|---|
-| **Overall Field-Level Extraction Accuracy** | **100.0%** (360/360 fields) | $\ge 90.0\%$ | **EXCEEDED** |
-| **Document Full-Pass Rate** | **100.0%** (50/50 documents) | $\ge 85.0\%$ | **EXCEEDED** |
+| **Overall Field-Level Extraction Accuracy** | **99.44%** (358/360 fields) | $\ge 90.0\%$ | **EXCEEDED** |
+| **Document Full-Pass Rate** | **96.0%** (48/50 documents) | $\ge 85.0\%$ | **EXCEEDED** |
 | **Inter-Annotator Agreement (Cohen's $\kappa$)** | **0.9055** | $\ge 0.8100$ (Almost Perfect) | **EXCEEDED** |
 | **Context Token Compression Ratio** | **24.33%** reduction | $\ge 20.0\%$ | **EXCEEDED** |
 | **Factual Information Retention Rate** | **100.0%** (20/20 probes) | $\ge 95.0\%$ | **EXCEEDED** |
-| **Inference Latency Profile (p50 / p95)** | **1,200 ms / 1,200 ms** | $< 3,000\text{ ms}$ | **EXCEEDED** |
-| **Estimated Unit Cost per 1,000 Documents** | **$0.1136 USD** | $< $0.5000\text{ USD}$ | **EXCEEDED** |
+| **Inference Latency Profile (p50 / p95)** | **1,050 ms / 1,654 ms** | $< 3,000\text{ ms}$ | **EXCEEDED** |
+| **Measured Unit Cost per 1,000 Documents** | **$0.2367 USD** | $< $0.5000\text{ USD}$ | **EXCEEDED** |
 | **Strict Repo Quality Bar Validation** | **11 / 11 Skills Passed** | 100% Strict CI Compliance | **VERIFIED** |
 
-> **Methodology note:** the 50 source documents are synthetic (no proprietary filings used — see [REPORT.md §Dataset](benchmarks/finance-50doc-v1/REPORT.md)), and the extraction pipeline itself is a deterministic harness rather than a live LLM call: latency and confidence figures are fixed reference constants (`scripts/run_finance_benchmark.py`), not measured model inference times. Accuracy, inter-annotator agreement, and compression ratio are genuinely computed against the gold-label answer keys — see [ROOT_CAUSE_ANALYSIS.md](ROOT_CAUSE_ANALYSIS.md) for the full methodology and limitations.
+> **Methodology note:** the 50 source documents are synthetic (no proprietary filings used — see [REPORT.md §Dataset](benchmarks/finance-50doc-v1/REPORT.md)). Extraction runs against a **real live LLM** (Groq, `openai/gpt-oss-120b`) — every accuracy, latency, confidence, token-count, and cost figure above is a genuine measurement from that run (`scripts/run_finance_benchmark.py`), not a simulated constant. The 2 field-level misses are a real, explainable finding, not noise: the model over-normalizes `fiscal_period` (a label like `"Q1 2024"`) toward ISO-date formatting on 2 of 10 income statements — and was *overconfident* on both (0.98/0.95 confidence despite being wrong), while two genuinely low-confidence fields elsewhere were correctly flagged and still right. See [ROOT_CAUSE_ANALYSIS.md](ROOT_CAUSE_ANALYSIS.md) for the full methodology, and [REPORT.md §5](benchmarks/finance-50doc-v1/REPORT.md) for the failure analysis.
 
 ---
 

@@ -11,7 +11,7 @@
       "extracted": "Maria Luisa Gonzalez",
       "expected": "Maria Luisa Gonzalez",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "PASSPORT",
       "expected": "PASSPORT",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "P88319022",
       "expected": "P88319022",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 92000.0,
       "expected": 92000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 20000.0,
       "expected": 20000.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": "Home Improvement Remodel",
       "expected": "Home Improvement Remodel",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -59,7 +59,7 @@
       "extracted": [],
       "expected": [],
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

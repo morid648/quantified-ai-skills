@@ -3,31 +3,31 @@
   "category": "income_statement",
   "is_noisy": true,
   "fields_total": 8,
-  "fields_correct": 8,
-  "field_accuracy_pct": 100.0,
-  "doc_passed": true,
+  "fields_correct": 7,
+  "field_accuracy_pct": 87.5,
+  "doc_passed": false,
   "field_evaluations": {
     "company_name": {
       "extracted": "Delta Robotics Lab",
       "expected": "Delta Robotics Lab",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
     "fiscal_period": {
-      "extracted": "Q1 2024",
+      "extracted": "2024-Q1",
       "expected": "Q1 2024",
-      "matched": true,
-      "confidence": 0.82,
-      "error_type": "CORRECT",
+      "matched": false,
+      "confidence": 0.95,
+      "error_type": "WRONG_VALUE",
       "low_confidence_flagged": false
     },
     "total_revenue": {
       "extracted": 2200000.0,
       "expected": 2200000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 980000.0,
       "expected": 980000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 1220000.0,
       "expected": 1220000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 750000.0,
       "expected": 750000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -59,7 +59,7 @@
       "extracted": 470000.0,
       "expected": 470000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -67,9 +67,9 @@
       "extracted": 371000.0,
       "expected": 371000.0,
       "matched": true,
-      "confidence": 0.65,
+      "confidence": 0.99,
       "error_type": "CORRECT",
-      "low_confidence_flagged": true
+      "low_confidence_flagged": false
     }
   }
 }

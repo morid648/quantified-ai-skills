@@ -11,7 +11,7 @@
       "extracted": "Valerie Nicole Stone",
       "expected": "Valerie Nicole Stone",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "PASSPORT",
       "expected": "PASSPORT",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "EXPIRED-P33019",
       "expected": "EXPIRED-P33019",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 95000.0,
       "expected": 95000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 30000.0,
       "expected": 30000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": "Refinancing Secondary Debt",
       "expected": "Refinancing Secondary Debt",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -65,7 +65,7 @@
         "IDENTITY_VERIFICATION_FAILED"
       ],
       "matched": true,
-      "confidence": 0.9,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

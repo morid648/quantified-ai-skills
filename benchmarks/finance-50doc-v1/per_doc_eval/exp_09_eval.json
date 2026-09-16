@@ -11,7 +11,7 @@
       "extracted": "Arthur Pendelton",
       "expected": "Arthur Pendelton",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "EXP-2024-089",
       "expected": "EXP-2024-089",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-03-28",
       "expected": "2024-03-28",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 478.5,
       "expected": 478.5,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": "PENDING",
       "expected": "PENDING",
       "matched": true,
-      "confidence": 0.88,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -77,7 +77,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.85,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

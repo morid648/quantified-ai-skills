@@ -2,9 +2,9 @@
   "doc_id": "inv_03",
   "category": "invoice",
   "is_noisy": false,
-  "in_tokens": 452,
-  "out_tokens": 100,
-  "latency_ms": 1200.01,
+  "in_tokens": 669,
+  "out_tokens": 349,
+  "latency_ms": 1335.97,
   "extractions": {
     "vendor_name": "Crestview Strategic Consulting",
     "invoice_number": "CSC-9904",
@@ -29,13 +29,14 @@
     ]
   },
   "field_confidence": {
-    "vendor_name": 0.98,
-    "invoice_number": 0.98,
-    "invoice_date": 0.98,
-    "due_date": 0.98,
-    "subtotal": 0.98,
-    "tax_amount": 0.98,
-    "total_amount": 0.98,
-    "line_items": 0.96
-  }
+    "vendor_name": 1.0,
+    "invoice_number": 1.0,
+    "invoice_date": 1.0,
+    "due_date": 1.0,
+    "subtotal": 1.0,
+    "tax_amount": 1.0,
+    "total_amount": 1.0,
+    "line_items": 1.0
+  },
+  "model": "openai/gpt-oss-120b"
 }

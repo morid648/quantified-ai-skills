@@ -2,9 +2,9 @@
   "doc_id": "exp_03",
   "category": "expense_report",
   "is_noisy": false,
-  "in_tokens": 415,
-  "out_tokens": 89,
-  "latency_ms": 1200.01,
+  "in_tokens": 582,
+  "out_tokens": 212,
+  "latency_ms": 1051.73,
   "extractions": {
     "employee_name": "David Rossi",
     "report_id": "EXP-2024-083",
@@ -27,11 +27,12 @@
     ]
   },
   "field_confidence": {
-    "employee_name": 0.98,
-    "report_id": 0.98,
-    "submission_date": 0.98,
-    "total_amount": 0.98,
-    "approval_status": 0.98,
-    "expense_items": 0.96
-  }
+    "employee_name": 0.99,
+    "report_id": 0.99,
+    "submission_date": 0.99,
+    "total_amount": 0.99,
+    "approval_status": 0.99,
+    "expense_items": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

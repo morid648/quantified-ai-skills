@@ -11,7 +11,7 @@
       "extracted": "Rajesh Patel",
       "expected": "Rajesh Patel",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "EXP-2024-087",
       "expected": "EXP-2024-087",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-03-18",
       "expected": "2024-03-18",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 183.8,
       "expected": 183.8,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": "APPROVED",
       "expected": "APPROVED",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -77,7 +77,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.96,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

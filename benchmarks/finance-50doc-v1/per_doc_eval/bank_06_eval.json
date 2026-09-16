@@ -11,7 +11,7 @@
       "extracted": "Liberty Business Banking",
       "expected": "Liberty Business Banking",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "8812-4409-12",
       "expected": "8812-4409-12",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-03-01",
       "expected": "2024-03-01",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": "2024-03-31",
       "expected": "2024-03-31",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 33100.0,
       "expected": 33100.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 29800.0,
       "expected": 29800.0,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -85,7 +85,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.96,
+      "confidence": 0.98,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

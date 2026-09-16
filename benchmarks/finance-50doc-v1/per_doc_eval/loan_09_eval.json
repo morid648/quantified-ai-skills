@@ -11,7 +11,7 @@
       "extracted": "Bradley Thomas Thorne",
       "expected": "Bradley Thomas Thorne",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "SSN",
       "expected": "SSN",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "XXX-XX-8831",
       "expected": "XXX-XX-8831",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": 45000.0,
       "expected": 45000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 350000.0,
       "expected": 350000.0,
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": "Speculative Real Estate",
       "expected": "Speculative Real Estate",
       "matched": true,
-      "confidence": 0.82,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -65,7 +65,7 @@
         "SPECULATIVE_PURPOSE_FLAG"
       ],
       "matched": true,
-      "confidence": 0.92,
+      "confidence": 0.99,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

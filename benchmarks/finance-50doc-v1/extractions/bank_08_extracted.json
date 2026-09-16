@@ -2,9 +2,9 @@
   "doc_id": "bank_08",
   "category": "bank_statement",
   "is_noisy": false,
-  "in_tokens": 413,
-  "out_tokens": 82,
-  "latency_ms": 1200.01,
+  "in_tokens": 613,
+  "out_tokens": 226,
+  "latency_ms": 1765.93,
   "extractions": {
     "bank_name": "Pacific Merchant Bank",
     "account_number": "1044-8839-01",
@@ -22,12 +22,13 @@
     ]
   },
   "field_confidence": {
-    "bank_name": 0.98,
-    "account_number": 0.98,
-    "statement_period_start": 0.98,
-    "statement_period_end": 0.98,
-    "opening_balance": 0.98,
-    "closing_balance": 0.98,
-    "transactions": 0.96
-  }
+    "bank_name": 0.99,
+    "account_number": 0.99,
+    "statement_period_start": 0.99,
+    "statement_period_end": 0.99,
+    "opening_balance": 0.99,
+    "closing_balance": 0.99,
+    "transactions": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

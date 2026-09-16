@@ -2,12 +2,12 @@
   "doc_id": "inc_01",
   "category": "income_statement",
   "is_noisy": false,
-  "in_tokens": 424,
-  "out_tokens": 61,
-  "latency_ms": 1200.01,
+  "in_tokens": 629,
+  "out_tokens": 171,
+  "latency_ms": 784.36,
   "extractions": {
     "company_name": "Northstar Logistics Corp",
-    "fiscal_period": "Q1 2024",
+    "fiscal_period": "2024-03-31",
     "total_revenue": 1250000.0,
     "cost_of_goods_sold": 650000.0,
     "gross_profit": 600000.0,
@@ -16,13 +16,14 @@
     "net_income": 176000.0
   },
   "field_confidence": {
-    "company_name": 0.98,
+    "company_name": 0.99,
     "fiscal_period": 0.98,
-    "total_revenue": 0.98,
-    "cost_of_goods_sold": 0.98,
-    "gross_profit": 0.98,
-    "operating_expenses": 0.98,
-    "operating_income": 0.98,
-    "net_income": 0.98
-  }
+    "total_revenue": 0.99,
+    "cost_of_goods_sold": 0.99,
+    "gross_profit": 0.99,
+    "operating_expenses": 0.99,
+    "operating_income": 0.99,
+    "net_income": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }

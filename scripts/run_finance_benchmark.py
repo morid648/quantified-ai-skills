@@ -10,7 +10,61 @@ import json
 import time
 import re
 import math
+import urllib.request
+import urllib.error
 from datetime import datetime, timezone
+
+LLM_PROVIDER = "groq"
+LLM_MODEL = "openai/gpt-oss-120b"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+# Real Groq direct-API pricing for openai/gpt-oss-120b.
+LLM_RATE_IN_PER_TOKEN = 0.15 / 1_000_000
+LLM_RATE_OUT_PER_TOKEN = 0.60 / 1_000_000
+
+CATEGORY_SCHEMAS = {
+    "invoice": {
+        "scalar_fields": [
+            "vendor_name", "invoice_number", "invoice_date", "due_date",
+            "subtotal", "tax_amount", "total_amount",
+        ],
+        "array_field": "line_items",
+        "array_item_fields": ["desc", "qty", "unit", "amt"],
+    },
+    "bank_statement": {
+        "scalar_fields": [
+            "bank_name", "account_number", "statement_period_start",
+            "statement_period_end", "opening_balance", "closing_balance",
+        ],
+        "array_field": "transactions",
+        "array_item_fields": ["date", "desc", "amount", "balance"],
+    },
+    "income_statement": {
+        "scalar_fields": [
+            "company_name", "fiscal_period", "total_revenue", "cost_of_goods_sold",
+            "gross_profit", "operating_expenses", "operating_income", "net_income",
+        ],
+        "array_field": None,
+        "array_item_fields": None,
+    },
+    "expense_report": {
+        "scalar_fields": [
+            "employee_name", "report_id", "submission_date",
+            "total_amount", "approval_status",
+        ],
+        "array_field": "expense_items",
+        "array_item_fields": ["date", "category", "merchant", "amount"],
+    },
+    "loan_application": {
+        "scalar_fields": [
+            "applicant_name", "id_type", "id_number",
+            "annual_income", "requested_amount", "loan_purpose",
+        ],
+        "array_field": "risk_flags",
+        "array_item_fields": None,  # array of plain strings, not objects
+    },
+}
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
@@ -118,93 +172,156 @@ def run_context_optimization():
     return opt_records
 
 # ---------------------------------------------------------------------------
-# Step 4: Extraction Execution (50 Documents)
+# Step 4: Extraction Execution (50 Documents) -- real Groq API calls,
+# per the extraction-prompt-library-finance skill's value/confidence protocol.
 # ---------------------------------------------------------------------------
 
+def build_extraction_prompt(category, doc_text):
+    spec = CATEGORY_SCHEMAS[category]
+    schema_lines = []
+    for f in spec["scalar_fields"]:
+        schema_lines.append(f'  "{f}": {{ "value": <string|number|null>, "confidence": <float 0.0-1.0> }},')
+
+    array_field = spec["array_field"]
+    if array_field == "risk_flags":
+        schema_lines.append(f'  "{array_field}": {{ "value": [<string>, ...], "confidence": <float 0.0-1.0> }}')
+    elif array_field:
+        item_fields = ", ".join(f'"{f}": <value>' for f in spec["array_item_fields"])
+        schema_lines.append(
+            f'  "{array_field}": {{ "value": [{{ {item_fields} }}, ...], "confidence": <float 0.0-1.0> }}'
+        )
+
+    schema_block = "{\n" + "\n".join(schema_lines) + "\n}"
+
+    return f"""You are a certified financial data auditor extracting structured fields from a {category.replace('_', ' ')} document.
+
+Extract exactly these fields and return STRICT JSON matching this schema (no markdown fences, no commentary):
+{schema_block}
+
+Rules:
+- Dates in ISO-8601 (YYYY-MM-DD). Numeric fields as plain floats (no currency symbols or commas).
+- Every field must include a calibrated "confidence" between 0.0 and 1.0.
+- If a field is missing, ambiguous, smudged, or the document contains an internal inconsistency (e.g. a total that doesn't match its line items, a non-standard date format, an OCR-like character substitution), extract your best-effort value but set confidence BELOW 0.70.
+- For array fields (line items / transactions / expense items), extract every row exactly as it appears.
+
+Document Content:
+{doc_text}"""
+
+
+def call_llm(prompt: str) -> tuple[dict, int, int, float]:
+    """Returns (parsed_json, input_tokens, output_tokens, latency_ms) from a real
+    Groq API call (openai/gpt-oss-120b, OpenAI-compatible chat completions).
+
+    latency_ms measures only the single successful HTTP round-trip -- retry
+    backoff sleeps (e.g. for 429 rate limits) are excluded so they don't
+    inflate the reported per-document inference latency.
+    """
+    if not GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY is not set -- export it or add it to .env before running.")
+
+    payload = json.dumps({
+        "model": LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "reasoning_effort": "low",
+        "response_format": {"type": "json_object"},
+    }).encode("utf-8")
+
+    last_err = None
+    for attempt in range(5):
+        req = urllib.request.Request(
+            GROQ_URL,
+            data=payload,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                # Groq's Cloudflare front-end 403s urllib's default User-Agent.
+                "User-Agent": "quantified-ai-skills-benchmark/1.0",
+            },
+            method="POST",
+        )
+        try:
+            t0 = time.perf_counter()
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                body = json.loads(resp.read().decode("utf-8"))
+            latency_ms = round((time.perf_counter() - t0) * 1000, 2)
+            text = body["choices"][0]["message"]["content"]
+            usage = body.get("usage", {})
+            in_tok = usage.get("prompt_tokens", 0)
+            out_tok = usage.get("completion_tokens", 0)
+            text = re.sub(r"^```(json)?\s*|\s*```$", "", text.strip())
+            return json.loads(text), in_tok, out_tok, latency_ms
+        except urllib.error.HTTPError as e:
+            last_err = e
+            wait = 20 if e.code == 429 else (2 ** attempt)
+            time.sleep(wait)
+        except (urllib.error.URLError, json.JSONDecodeError, KeyError, IndexError) as e:
+            last_err = e
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"Groq call failed after 5 attempts: {last_err}")
+
+
 def run_extraction_pipeline():
-    print("\n--- Step 4: Executing Financial Information Extractions (50 Docs) ---")
+    print(f"\n--- Step 4: Executing Financial Information Extractions (50 Docs) via live {LLM_MODEL} calls ---")
     gold_files = sorted([f for f in os.listdir(GOLD_DIR) if f.endswith(".json")])
-    
+
     extractions = {}
-    
-    for gf in gold_files:
+    failures = []
+
+    for idx, gf in enumerate(gold_files, 1):
         doc_id = gf.replace(".json", "")
         with open(os.path.join(GOLD_DIR, gf), "r", encoding="utf-8") as f:
             gold = json.load(f)
-            
+
         doc_path = os.path.join(DOCS_DIR, f"{doc_id}.txt")
         with open(doc_path, "r", encoding="utf-8") as f:
             doc_text = f.read()
-            
-        t_start = time.perf_counter()
-        
-        # Simulate high-fidelity extraction model compliant with extraction-prompt-library-finance
+
+        category = gold["category"]
+        is_noisy = gold.get("is_noisy", False)
+        prompt = build_extraction_prompt(category, doc_text)
+
+        try:
+            parsed, in_tokens, out_tokens, t_elapsed_ms = call_llm(prompt)
+        except Exception as e:
+            print(f"  [{idx}/50] {doc_id}: FAILED -- {e}")
+            failures.append(doc_id)
+            continue
+        finally:
+            time.sleep(3)  # stay under free-tier requests-per-minute limits
+
         extracted_fields = {}
         confidence_map = {}
-        
-        is_noisy = gold.get("is_noisy", False)
-        injected_flaws = gold.get("injected_flaws", [])
-        
-        for k, v in gold["fields"].items():
-            if k == "line_items" or k == "transactions" or k == "expense_items":
-                extracted_items = []
-                for item in v:
-                    extracted_item = {}
-                    for ik, iv in item.items():
-                        extracted_item[ik] = iv
-                    extracted_items.append(extracted_item)
-                extracted_fields[k] = extracted_items
-                confidence_map[k] = 0.96 if not is_noisy else 0.85
-            elif k == "due_date" and "missing_due_date" in injected_flaws:
-                extracted_fields[k] = None
-                confidence_map[k] = 0.50 # Correctly caught low confidence on missing field
-            elif k == "total_amount" and "arithmetic_total_discrepancy" in injected_flaws:
-                # Model extracts stated total from document
-                extracted_fields[k] = 3574.00
-                confidence_map[k] = 0.65 # Flagged due to subtotal math mismatch
-            elif k == "account_number" and "ocr_char_in_account_number" in injected_flaws:
-                extracted_fields[k] = "7710-9941-O8"
-                confidence_map[k] = 0.68 # Low confidence on character O instead of zero
-            elif k == "fiscal_period" and "non_standard_fiscal_period_header" in injected_flaws:
-                extracted_fields[k] = "TTM Ended Q2 2024 (Non-Standard)"
-                confidence_map[k] = 0.72
-            elif k == "net_income" and "arithmetic_rounding_discrepancy" in injected_flaws:
-                extracted_fields[k] = 371000.00
-                confidence_map[k] = 0.65 # Flagged math check
-            elif k == "approval_status" and "pending_supervisor_approval" in injected_flaws:
-                extracted_fields[k] = "PENDING"
-                confidence_map[k] = 0.88
-            elif k == "risk_flags" and "high_debt_to_income_anomaly" in injected_flaws:
-                extracted_fields[k] = ["DEBT_TO_INCOME_HIGH", "SPECULATIVE_PURPOSE_FLAG"]
-                confidence_map[k] = 0.92
-            elif k == "risk_flags" and "expired_id_document" in injected_flaws:
-                extracted_fields[k] = ["EXPIRED_IDENTIFICATION", "IDENTITY_VERIFICATION_FAILED"]
-                confidence_map[k] = 0.90
+        for k in gold["fields"]:
+            field_result = parsed.get(k, {})
+            if isinstance(field_result, dict) and "value" in field_result:
+                extracted_fields[k] = field_result["value"]
+                confidence_map[k] = field_result.get("confidence", 1.0)
             else:
-                extracted_fields[k] = v
-                confidence_map[k] = 0.98 if not is_noisy else 0.82
-                
-        t_elapsed_ms = round((time.perf_counter() - t_start) * 1000 + 1200, 2) # Base model inference latency simulation
-        
-        in_tokens = estimate_tokens(doc_text) + 250 # prompt template tokens
-        out_tokens = estimate_tokens(json.dumps(extracted_fields))
-        
+                # Model omitted the field or didn't follow the value/confidence wrapper.
+                extracted_fields[k] = None
+                confidence_map[k] = 0.0
+
         record = {
             "doc_id": doc_id,
-            "category": gold["category"],
+            "category": category,
             "is_noisy": is_noisy,
             "in_tokens": in_tokens,
             "out_tokens": out_tokens,
             "latency_ms": t_elapsed_ms,
             "extractions": extracted_fields,
-            "field_confidence": confidence_map
+            "field_confidence": confidence_map,
+            "model": LLM_MODEL,
         }
-        
+
         extractions[doc_id] = record
         with open(os.path.join(EXTRACTIONS_DIR, f"{doc_id}_extracted.json"), "w", encoding="utf-8") as f:
             json.dump(record, f, indent=2)
-            
-    print(f"Completed extractions for 50/50 documents across all 5 categories.")
+
+        print(f"  [{idx}/50] {doc_id} ({category}): {t_elapsed_ms}ms, {in_tokens}in/{out_tokens}out tokens")
+
+    if failures:
+        print(f"\nWARNING: {len(failures)} document(s) failed extraction and are excluded from scoring: {failures}")
+    print(f"Completed extractions for {len(extractions)}/50 documents across all 5 categories.")
     return extractions
 
 # ---------------------------------------------------------------------------
@@ -431,10 +548,8 @@ def run_aggregation_and_packaging(extractions, per_doc_eval, category_stats, tax
     total_out_tokens = sum(ext["out_tokens"] for ext in extractions.values())
     
     # Cost per 1,000 docs
-    # Rate: $0.150 per 1M input, $0.600 per 1M output
-    rate_in = 0.150 / 1_000_000
-    rate_out = 0.600 / 1_000_000
-    total_cost_usd = (total_in_tokens * rate_in) + (total_out_tokens * rate_out)
+    # Real Groq direct-API pricing for openai/gpt-oss-120b: $0.15/1M in, $0.60/1M out.
+    total_cost_usd = (total_in_tokens * LLM_RATE_IN_PER_TOKEN) + (total_out_tokens * LLM_RATE_OUT_PER_TOKEN)
     cost_per_1k = round((total_cost_usd / len(extractions)) * 1000, 4)
     
     # Compile category summaries

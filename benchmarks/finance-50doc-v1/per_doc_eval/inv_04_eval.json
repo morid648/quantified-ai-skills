@@ -11,7 +11,7 @@
       "extracted": "Summit Logistics & Freight",
       "expected": "Summit Logistics & Freight",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -19,7 +19,7 @@
       "extracted": "SLF-44102",
       "expected": "SLF-44102",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -27,7 +27,7 @@
       "extracted": "2024-02-10",
       "expected": "2024-02-10",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -35,7 +35,7 @@
       "extracted": "2024-02-25",
       "expected": "2024-02-25",
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -43,7 +43,7 @@
       "extracted": 4120.5,
       "expected": 4120.5,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -51,7 +51,7 @@
       "extracted": 206.03,
       "expected": 206.03,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -59,7 +59,7 @@
       "extracted": 4326.53,
       "expected": 4326.53,
       "matched": true,
-      "confidence": 0.98,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     },
@@ -93,7 +93,7 @@
         }
       ],
       "matched": true,
-      "confidence": 0.96,
+      "confidence": 1.0,
       "error_type": "CORRECT",
       "low_confidence_flagged": false
     }

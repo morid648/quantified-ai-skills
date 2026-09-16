@@ -2,9 +2,9 @@
   "doc_id": "loan_07",
   "category": "loan_application",
   "is_noisy": false,
-  "in_tokens": 401,
-  "out_tokens": 54,
-  "latency_ms": 1200.01,
+  "in_tokens": 568,
+  "out_tokens": 202,
+  "latency_ms": 934.2,
   "extractions": {
     "applicant_name": "Kevin Alexander O'Connor",
     "id_type": "TAX_ID",
@@ -15,12 +15,13 @@
     "risk_flags": []
   },
   "field_confidence": {
-    "applicant_name": 0.98,
-    "id_type": 0.98,
-    "id_number": 0.98,
+    "applicant_name": 0.99,
+    "id_type": 0.99,
+    "id_number": 0.99,
     "annual_income": 0.98,
     "requested_amount": 0.98,
     "loan_purpose": 0.98,
-    "risk_flags": 0.98
-  }
+    "risk_flags": 0.99
+  },
+  "model": "openai/gpt-oss-120b"
 }
