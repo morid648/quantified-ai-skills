@@ -110,10 +110,10 @@ In the real world, human paperwork often contains typos, missing dates, or math 
 
 ## 6. Where to Find Key Files
 
-- **The Executive Benchmark Report**: [`benchmarks/finance-50doc-v1/REPORT.md`](file:///g:/Data%20Analytics/19.Portfolio/ai-skills/benchmarks/finance-50doc-v1/REPORT.md)
-- **The Human Verification Log**: [`benchmarks/finance-50doc-v1/discrepancy_log.md`](file:///g:/Data%20Analytics/19.Portfolio/ai-skills/benchmarks/finance-50doc-v1/discrepancy_log.md)
-- **The Technical Project Plan**: [`tasks.md`](file:///g:/Data%20Analytics/19.Portfolio/ai-skills/tasks.md)
-- **The Mathematical Definitions**: [`references/quantified-metrics-definitions.md`](file:///g:/Data%20Analytics/19.Portfolio/ai-skills/references/quantified-metrics-definitions.md)
+- **The Executive Benchmark Report**: [`benchmarks/finance-50doc-v1/REPORT.md`](benchmarks/finance-50doc-v1/REPORT.md)
+- **The Human Verification Log**: [`benchmarks/finance-50doc-v1/discrepancy_log.md`](benchmarks/finance-50doc-v1/discrepancy_log.md)
+- **The Technical Project Plan**: [`tasks.md`](tasks.md)
+- **The Mathematical Definitions**: [`references/quantified-metrics-definitions.md`](references/quantified-metrics-definitions.md)
 
 ---
 

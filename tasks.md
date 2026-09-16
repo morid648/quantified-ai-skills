@@ -1,6 +1,6 @@
 # Tasks: Quantified Skill Pack & 50-Document Finance Validation Run
 
-Based on [PRD: AI Training/Evaluation, Context Optimization, Prompt Engineering & Annotation Skill Pack](file:///g:/Data%20Analytics/19.Portfolio/ai-skills/prd.md).
+Based on [PRD: AI Training/Evaluation, Context Optimization, Prompt Engineering & Annotation Skill Pack](prd.md).
 
 ---
 

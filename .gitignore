@@ -13,6 +13,8 @@ data/node_modules
 *_ANALYSIS*.md
 *_COUNT.md
 *_SUMMARY.md
+!ROOT_CAUSE_ANALYSIS.md
+!.github/ISSUE_TEMPLATE/bug_report.md
 *_analysis.json
 *_validation.json
 *_results.json
