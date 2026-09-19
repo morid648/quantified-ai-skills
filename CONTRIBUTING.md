@@ -29,7 +29,7 @@ To run validation, index generation, and README updates locally:
    ```
    Then you can run `npm run chain` (validate → index → readme) and `npm run catalog`.
 
-**Validation:** The canonical validator is **Python** (`scripts/validate_skills.py`). Use `npm run validate` (or `npm run validate:strict` for CI-style checks). The JavaScript validator (`scripts/validate-skills.js`) is legacy/optional and uses a different schema; CI and PR checks rely on the Python validator only.
+**Validation:** The canonical validator is **Python** (`scripts/validate_skills.py`). Use `npm run validate` (or `npm run validate:strict` for CI-style checks). CI and PR checks rely on the Python validator only.
 
 **npm audit:** CI runs `npm audit --audit-level=high`. To fix issues locally: run `npm audit`, then `npm update` or `npm audit fix` as appropriate; for breaking changes, update dependencies manually and run tests.
 

@@ -1,18 +1,3 @@
-const assert = require("assert");
-const { hasUseSection } = require("../validate-skills");
-
-const samples = [
-  ["## When to Use", true],
-  ["## Use this skill when", true],
-  ["## When to Use This Skill", true],
-  ["## Overview", false],
-];
-
-for (const [heading, expected] of samples) {
-  const content = `\n${heading}\n- item\n`;
-  assert.strictEqual(hasUseSection(content), expected, heading);
-}
-
 // Regression test for YAML validity in frontmatter (Issue #79)
 // Logs skills with parse errors as warnings; does not fail (many legacy skills have multiline frontmatter).
 const fs = require("fs");
